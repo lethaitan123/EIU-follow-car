@@ -1,0 +1,14 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="Build">
+    <Message Text ="There is no build task for the current project" />
+  </Target>
+
+  <Target Name="Clean">
+    <Message Text ="There is no clean task for the current project" />
+  </Target>
+
+  <Target Name="ReBuild" >
+    <Message Text ="There is no rebuild task for the current project" />
+  </Target>
+</Project>

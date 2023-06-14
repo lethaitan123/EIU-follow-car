@@ -1,0 +1,22 @@
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Preprocessing Assembler File (.S)</Name>
+    <Description>A blank GNU Preprocessing Assembler (.S) file. This file type contains assembler code that must be preprocessed.</Description>
+    <Icon>Text.ico</Icon>
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>170</SortOrder>
+    <DefaultName>Assembler.S</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">Assembler.S</ProjectItem>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>
+      AvrGCC
+    </Assembly>
+    <FullClassName>
+      Atmel.VsIde.AvrStudio.Project.Gcc.Wizard.AvrGccItemTemplateWizard
+    </FullClassName>
+  </WizardExtension>
+  
+</VSTemplate>

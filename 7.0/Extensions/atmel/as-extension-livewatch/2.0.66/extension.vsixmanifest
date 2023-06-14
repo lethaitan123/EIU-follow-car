@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="7DF6DCFD-2BCA-41C7-9C0E-1B7F606B008E">
+    <Name>LiveWatch</Name>
+    <Author>Atmel</Author>
+    <Version>2.0.66</Version>
+    <Description xml:space="preserve">Watch variables real-time</Description>
+    <Locale>1033</Locale>
+    <License>EULA.txt</License>
+    <Icon>AtmelStudio.png</Icon>
+    <PreviewImage>ScreenShot.png</PreviewImage>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.5" />
+    <AllUsers>true</AllUsers>
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>LiveWatch.pkgdef</VsPackage>
+  </Content>
+</Vsix>

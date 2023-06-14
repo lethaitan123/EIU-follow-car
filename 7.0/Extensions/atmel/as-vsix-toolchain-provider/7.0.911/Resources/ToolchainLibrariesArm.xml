@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--List of toolchain libraries that user can add from the project node-->
+<ArrayOfLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+  <Library>
+    <LibraryName>libm.a</LibraryName>
+    <Platform>ARM</Platform>
+  </Library>
+  <Library>
+    <LibraryName>libnosys.a</LibraryName>
+    <Platform>ARM</Platform>  
+</Library>
+</ArrayOfLibrary>

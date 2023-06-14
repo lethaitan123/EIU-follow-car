@@ -1,0 +1,41 @@
+﻿<VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>AVR Assembler Project</Name>
+    <Description>Creates an AVR 8-bit Assembler project</Description>
+    <Icon>Assembler.ico</Icon>
+    <PreviewImage>asm2-200x200.png</PreviewImage>
+    <ProjectType>Assembler</ProjectType>
+    <SortOrder>50</SortOrder>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AssemblerApplication</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Assembler.asmproj" ReplaceParameters="true">
+      <!-- Workaround - Added Properties folder to keep the Visual Studio project creation flow happier -->
+      <Folder Name="Properties" TargetFolderName="Properties" />
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$deviceseries$" Value="none" />
+      <CustomParameter Name="$UseGlobalToolchain$" Value="True"/>
+      <CustomParameter Name="$ToolchainDirPath$" Value=""/>
+      <CustomParameter Name="$MakeDirPath$" Value=""/>
+      <CustomParameter Name="$GlobalToolchainPath$" Value=""/>
+      <CustomParameter Name="$Language$" Value="ASSEMBLY"/>
+      <CustomParameter Name="$fullyqualifiedtoolchainname$" Value="com.Atmel.AVRAssembler"/>
+    </CustomParameters>
+  </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>
+      AvrAssembler
+    </Assembly>
+    <FullClassName>
+      Atmel.VsIde.AvrStudio.Project.Assembler.AssemblerProjectWizard
+    </FullClassName>
+  </WizardExtension>
+  
+</VSTemplate>
+
+

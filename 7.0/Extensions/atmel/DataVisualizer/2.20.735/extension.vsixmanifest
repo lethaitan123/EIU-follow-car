@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="25dc067d-df31-4e22-be7f-cc6a77ccc7f3">
+    <Name>Data Visualizer Extension</Name>
+    <Author>Atmel</Author>
+    <Version>2.20.735</Version>
+    <Description xml:space="preserve">Atmel Data Visualizer is a real-time data visualizer. It can stream data from different sources, like the Xplained Pro cards, and present it through graphs and other visual elements.</Description>
+    <Locale>1033</Locale>
+    <License>EULA.txt</License>
+	<Icon>DataVisualizer.ico</Icon>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.6" />
+     <AllUsers>true</AllUsers>
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>
+      DataVisualizerExtension.AS7.pkgdef
+    </VsPackage>
+  </Content>
+</Vsix>

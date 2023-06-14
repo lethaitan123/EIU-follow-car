@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Vsix xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="1.0.0">
+  <Identifier Id="AtmelToolchainProvider.Atmel.10EF9C74-D8DA-4872-85F5-D8BB3101E245">
+    <Name>AtmelToolchainProvider</Name>
+    <Author>Atmel</Author>
+    <Version> 7.0.911 </Version>
+    <Description xml:space="preserve">Toolchain Provider</Description>
+    <Locale>1033</Locale>
+    <License>Licence.txt</License>
+    <Icon>iconfile.ico</Icon>
+    <PreviewImage>preview.png</PreviewImage>
+    <SupportedProducts>
+      <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MaxVersion="4.5" MinVersion="4.0"/>
+    <AllUsers>true</AllUsers>
+  </Identifier>
+  <References/>
+  <Content>
+    <MefComponent>AVRGCC.ToolchainProvider.dll</MefComponent>
+    <VsPackage>AVRGCC.ToolchainProvider.pkgdef</VsPackage>
+    <CustomExtension Type="AVRGCC_TOOLCHAIN_8_32_.4.3.1.0">AVRGCC.ToolchainProvider.dll</CustomExtension>
+    <CustomExtension Type="ARMGCC_TOOLCHAIN_32_Version">ARMGCC.ToolchainProvider.dll</CustomExtension>
+    <CustomExtension Type="AVRAssembler_ToolChain_2.0">AVRAssembler.ToolchainProvider.dll</CustomExtension>
+    <MefComponent>ARMGCC.ToolchainProvider.dll</MefComponent>
+    <MefComponent>AVRAssembler.ToolchainProvider.dll</MefComponent>
+    <VsPackage>AVRAssembler.ToolchainProvider.pkgdef</VsPackage>
+    <VsPackage>ARMGCC.ToolchainProvider.pkgdef</VsPackage>
+    
+  </Content>
+</Vsix>

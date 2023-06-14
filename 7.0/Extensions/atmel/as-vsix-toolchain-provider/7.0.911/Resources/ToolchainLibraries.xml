@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--List of toolchain libraries that user can add from the library node-->
+<ArrayOfLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Library>
+    <LibraryName>libm.a</LibraryName>
+    <Platform>AVR8</Platform>
+  </Library>
+  <Library>
+    <LibraryName>libprintf_flt.a</LibraryName>
+    <Platform>AVR8</Platform>  
+</Library>
+  <Library>
+    <LibraryName>libprintf_min.a</LibraryName>
+    <Platform>AVR8</Platform>
+  </Library>
+  <Library>
+    <LibraryName>libscanf_flt.a</LibraryName>
+    <Platform>AVR8</Platform>  
+</Library>
+  <Library>
+    <LibraryName>libscanf_min.a</LibraryName>
+    <Platform>AVR8</Platform>
+  </Library>
+  <Library>
+    <LibraryName>libm.a</LibraryName>
+    <Platform>AVR32</Platform>  
+</Library>
+  <Library>
+    <LibraryName>libnosys.a</LibraryName>
+    <Platform>AVR32</Platform>  
+</Library>
+</ArrayOfLibrary>

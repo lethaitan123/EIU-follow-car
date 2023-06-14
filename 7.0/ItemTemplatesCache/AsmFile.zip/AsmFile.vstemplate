@@ -1,0 +1,23 @@
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Assembler File</Name>
+    <Description>A blank assembler (.asm) file.</Description>
+    <Icon>Text.ico</Icon>
+    <ProjectType>Assembler</ProjectType>
+    <SortOrder>180</SortOrder>
+    <DefaultName>AsmFile.asm</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">AsmProgram.asm</ProjectItem>
+  </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>
+      AvrAssembler
+    </Assembly>
+    <FullClassName>
+      Atmel.VsIde.AvrStudio.Project.Assembler.Wizard.AssemblerItemTemplateWizard
+    </FullClassName>
+  </WizardExtension>
+  
+</VSTemplate>

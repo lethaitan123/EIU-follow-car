@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<UsingTask TaskName="RunAsembler" AssemblyFile=""$(AVRSTUDIO_EXE_PATH)\Extensions\Application\AvrAssembler.dll" />
+  <Target Name="Build">
+    <RunAsembler AvrDevice ="$(avrdevice)" ProjectFolder="$(MSBuildProjectDirectory)" OutputType = "$(OutputType)" ShowMapFile="$(ShowMapFile)" ShowListFile="$(ShowListFile)" WrapRelativeJump="$(WrapRelativeJump)" UnsupportedInstructions="$(UnsupportedInstructions)" AdditionalParamaters="$(AdditionalParamaters)" AdditionalIncludePath="$(AdditionalIncludePath)" OutputFile="$(OutputFile)" EntryFile="$(EntryFile)" />
+  </Target>
+</Project>

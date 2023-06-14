@@ -1,0 +1,1561 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <resources target="ATxmega128A1">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega128A1.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox128a1.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega128a1/device-specs/specs-atxmega128a1"/>
+        <meta key="mmcu-option" value="atxmega128a1"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega128a1/avrxmega7/libatxmega128a1.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega128a1/avrxmega7/crtatxmega128a1.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega128a1"/>
+        <meta key="mmcu-option" value="atxmega128a1"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/libatxmega128a1.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/crtatxmega128a1.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/crtatxmega128a1.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/libatxmega128a1.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/libatxmega128a1.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox128a1.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega128a1.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega128a1.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega128A1def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega128a1u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega128A1"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega128a1u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega128A1"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega128A1U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega128A1U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox128a1u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega128a1u/device-specs/specs-atxmega128a1u"/>
+        <meta key="mmcu-option" value="atxmega128a1u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega128a1u/avrxmega7/libatxmega128a1u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega128a1u/avrxmega7/crtatxmega128a1u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega128a1u"/>
+        <meta key="mmcu-option" value="atxmega128a1u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/libatxmega128a1u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/crtatxmega128a1u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/crtatxmega128a1u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/libatxmega128a1u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/libatxmega128a1u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox128a1u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega128a1u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega128a1u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega128A1Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega128a1u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega128A1U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega128a1u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega128A1U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega128A3">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega128A3.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox128a3.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega128a3/device-specs/specs-atxmega128a3"/>
+        <meta key="mmcu-option" value="atxmega128a3"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega128a3/avrxmega6/libatxmega128a3.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega128a3/avrxmega6/crtatxmega128a3.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega128a3"/>
+        <meta key="mmcu-option" value="atxmega128a3"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega128a3.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega128a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega128a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega128a3.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega128a3.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox128a3.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega128a3.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega128a3.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega128A3def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega128A3"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega128A3"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega128A3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega128A3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox128a3u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega128a3u/device-specs/specs-atxmega128a3u"/>
+        <meta key="mmcu-option" value="atxmega128a3u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega128a3u/avrxmega6/libatxmega128a3u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega128a3u/avrxmega6/crtatxmega128a3u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega128a3u"/>
+        <meta key="mmcu-option" value="atxmega128a3u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega128a3u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega128a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega128a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega128a3u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega128a3u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox128a3u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega128a3u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega128a3u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega128A3Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega128A3U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega128A3U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega128A4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega128A4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox128a4u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega128a4u/device-specs/specs-atxmega128a4u"/>
+        <meta key="mmcu-option" value="atxmega128a4u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega128a4u/avrxmega7/libatxmega128a4u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega128a4u/avrxmega7/crtatxmega128a4u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega128a4u"/>
+        <meta key="mmcu-option" value="atxmega128a4u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/libatxmega128a4u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/crtatxmega128a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/crtatxmega128a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/libatxmega128a4u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega7/memx-const/libatxmega128a4u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox128a4u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega128a4u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega128a4u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega128A4Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega128a4.dll"/>
+        <meta key="device" value="ATxmega128A4U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega128a4.so"/>
+        <meta key="device" value="ATxmega128A4U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega16A4">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega16A4.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox16a4.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega16a4/device-specs/specs-atxmega16a4"/>
+        <meta key="mmcu-option" value="atxmega16a4"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega16a4/avrxmega2/libatxmega16a4.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega16a4/avrxmega2/crtatxmega16a4.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega16a4"/>
+        <meta key="mmcu-option" value="atxmega16a4"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega16a4.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega16a4.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega16a4.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega16a4.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega16a4.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox16a4.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega16a4.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega16a4.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega16A4def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega32a4u.dll"/>
+        <meta key="device" value="ATxmega16A4"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega32a4u.so"/>
+        <meta key="device" value="ATxmega16A4"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega16A4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega16A4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox16a4u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega16a4u/device-specs/specs-atxmega16a4u"/>
+        <meta key="mmcu-option" value="atxmega16a4u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega16a4u/avrxmega2/libatxmega16a4u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega16a4u/avrxmega2/crtatxmega16a4u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega16a4u"/>
+        <meta key="mmcu-option" value="atxmega16a4u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega16a4u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega16a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega16a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega16a4u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega16a4u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox16a4u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega16a4u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega16a4u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega16A4Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega32a4u.dll"/>
+        <meta key="device" value="ATxmega16A4U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega32a4u.so"/>
+        <meta key="device" value="ATxmega16A4U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega192A3">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega192A3.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox192a3.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega192a3/device-specs/specs-atxmega192a3"/>
+        <meta key="mmcu-option" value="atxmega192a3"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega192a3/avrxmega6/libatxmega192a3.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega192a3/avrxmega6/crtatxmega192a3.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega192a3"/>
+        <meta key="mmcu-option" value="atxmega192a3"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega192a3.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega192a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega192a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega192a3.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega192a3.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox192a3.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega192a3.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega192a3.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega192A3def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega192A3"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega192A3"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega192A3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega192A3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox192a3u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega192a3u/device-specs/specs-atxmega192a3u"/>
+        <meta key="mmcu-option" value="atxmega192a3u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega192a3u/avrxmega6/libatxmega192a3u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega192a3u/avrxmega6/crtatxmega192a3u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega192a3u"/>
+        <meta key="mmcu-option" value="atxmega192a3u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega192a3u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega192a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega192a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega192a3u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega192a3u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox192a3u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega192a3u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega192a3u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega192A3Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega192A3u"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega192A3u"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega256A3">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega256A3.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox256a3.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega256a3/device-specs/specs-atxmega256a3"/>
+        <meta key="mmcu-option" value="atxmega256a3"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega256a3/avrxmega6/libatxmega256a3.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega256a3/avrxmega6/crtatxmega256a3.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega256a3"/>
+        <meta key="mmcu-option" value="atxmega256a3"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega256a3.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega256a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega256a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox256a3.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega256a3.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega256a3.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega256A3def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega256A3"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega256A3"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega256A3B">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega256A3B.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox256a3b.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega256a3b/device-specs/specs-atxmega256a3b"/>
+        <meta key="mmcu-option" value="atxmega256a3b"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega256a3b/avrxmega6/libatxmega256a3b.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega256a3b/avrxmega6/crtatxmega256a3b.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega256a3b"/>
+        <meta key="mmcu-option" value="atxmega256a3b"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega256a3b.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega256a3b.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega256a3b.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3b.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3b.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox256a3b.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega256a3b.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega256a3b.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega256A3Bdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega256A3b"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega256A3b"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega256A3BU">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega256A3BU.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox256a3bu.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega256a3bu/device-specs/specs-atxmega256a3bu"/>
+        <meta key="mmcu-option" value="atxmega256a3bu"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega256a3bu/avrxmega6/libatxmega256a3bu.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega256a3bu/avrxmega6/crtatxmega256a3bu.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega256a3bu"/>
+        <meta key="mmcu-option" value="atxmega256a3bu"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega256a3bu.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega256a3bu.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega256a3bu.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3bu.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3bu.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox256a3bu.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega256a3bu.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega256a3bu.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega256A3BUdef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega256A3bu"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega256A3bu"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega256A3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega256A3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox256a3u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega256a3u/device-specs/specs-atxmega256a3u"/>
+        <meta key="mmcu-option" value="atxmega256a3u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega256a3u/avrxmega6/libatxmega256a3u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega256a3u/avrxmega6/crtatxmega256a3u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega256a3u"/>
+        <meta key="mmcu-option" value="atxmega256a3u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/libatxmega256a3u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/crtatxmega256a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/crtatxmega256a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega6/memx-const/libatxmega256a3u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox256a3u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega256a3u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega256a3u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega256A3Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega256A3U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega256A3U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega32A4">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega32A4.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox32a4.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega32a4/device-specs/specs-atxmega32a4"/>
+        <meta key="mmcu-option" value="atxmega32a4"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega32a4/avrxmega2/libatxmega32a4.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega32a4/avrxmega2/crtatxmega32a4.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega32a4"/>
+        <meta key="mmcu-option" value="atxmega32a4"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega32a4.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega32a4.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega32a4.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega32a4.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega32a4.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox32a4.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega32a4.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega32a4.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega32A4def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega32a4u.dll"/>
+        <meta key="device" value="ATxmega32A4"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega32a4u.so"/>
+        <meta key="device" value="ATxmega32A4"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega32A4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega32A4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox32a4u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega32a4u/device-specs/specs-atxmega32a4u"/>
+        <meta key="mmcu-option" value="atxmega32a4u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega32a4u/avrxmega2/libatxmega32a4u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega32a4u/avrxmega2/crtatxmega32a4u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega32a4u"/>
+        <meta key="mmcu-option" value="atxmega32a4u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega32a4u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega32a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega32a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega32a4u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega32a4u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox32a4u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega32a4u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega32a4u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega32A4Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega32a4u.dll"/>
+        <meta key="device" value="ATxmega32A4U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega32a4u.so"/>
+        <meta key="device" value="ATxmega32A4U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega64A1">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega64A1.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox64a1.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega64a1/device-specs/specs-atxmega64a1"/>
+        <meta key="mmcu-option" value="atxmega64a1"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega64a1/avrxmega5/libatxmega64a1.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega64a1/avrxmega5/crtatxmega64a1.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega64a1"/>
+        <meta key="mmcu-option" value="atxmega64a1"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/libatxmega64a1.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/crtatxmega64a1.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/memx-const/crtatxmega64a1.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/memx-const/libatxmega64a1.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/memx-const/libatxmega64a1.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox64a1.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega64a1.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega64a1.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega64A1def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega128a1u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega64A1"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega128a1u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega64A1"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega64A1U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega64A1U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox64a1u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega64a1u/device-specs/specs-atxmega64a1u"/>
+        <meta key="mmcu-option" value="atxmega64a1u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega64a1u/avrxmega5/libatxmega64a1u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega64a1u/avrxmega5/crtatxmega64a1u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega64a1u"/>
+        <meta key="mmcu-option" value="atxmega64a1u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/libatxmega64a1u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/crtatxmega64a1u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/memx-const/crtatxmega64a1u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/memx-const/libatxmega64a1u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega5/memx-const/libatxmega64a1u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox64a1u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega64a1u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega64a1u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega64A1Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega128a1u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega64A1U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega128a1u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega64A1U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega64A3">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega64A3.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox64a3.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega64a3/device-specs/specs-atxmega64a3"/>
+        <meta key="mmcu-option" value="atxmega64a3"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega64a3/avrxmega4/libatxmega64a3.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega64a3/avrxmega4/crtatxmega64a3.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega64a3"/>
+        <meta key="mmcu-option" value="atxmega64a3"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/libatxmega64a3.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/crtatxmega64a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/crtatxmega64a3.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/libatxmega64a3.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/libatxmega64a3.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox64a3.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega64a3.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega64a3.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega64A3def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega64A3"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega64A3"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega64A3U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega64A3U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox64a3u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega64a3u/device-specs/specs-atxmega64a3u"/>
+        <meta key="mmcu-option" value="atxmega64a3u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega64a3u/avrxmega4/libatxmega64a3u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega64a3u/avrxmega4/crtatxmega64a3u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega64a3u"/>
+        <meta key="mmcu-option" value="atxmega64a3u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/libatxmega64a3u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/crtatxmega64a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/crtatxmega64a3u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/libatxmega64a3u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/libatxmega64a3u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox64a3u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega64a3u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega64a3u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega64A3Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega256a3u.dll"/>
+        <includes pattern="ffwAPI.dll"/>
+        <includes pattern="libcarbon5.dll"/>
+        <includes pattern="libcarbonaux.dll"/>
+        <includes pattern="msvcr71.dll"/>
+        <includes pattern="pthreadGC.dll"/>
+        <meta key="device" value="ATxmega64A3U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega256a3u.so"/>
+        <includes pattern="libcarbon5.so"/>
+        <meta key="device" value="ATxmega64A3U"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega64A4U">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega64A4U.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox64a4u.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega64a4u/device-specs/specs-atxmega64a4u"/>
+        <meta key="mmcu-option" value="atxmega64a4u"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega64a4u/avrxmega4/libatxmega64a4u.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega64a4u/avrxmega4/crtatxmega64a4u.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega64a4u"/>
+        <meta key="mmcu-option" value="atxmega64a4u"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/libatxmega64a4u.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/crtatxmega64a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/crtatxmega64a4u.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/libatxmega64a4u.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega4/memx-const/libatxmega64a4u.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox64a4u.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega64a4u.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega64a4u.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega64A4Udef.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmega128a4.dll"/>
+        <meta key="device" value="ATxmega64A4U"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmega128a4.so"/>
+        <meta key="device" value="ATxmega64A4U"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" vendor="Atmel" compliant="false">
+    <releases>
+      <release version="1.3.BUILDNUMBER">Fixed eeprom_read_block() routine. Mapped subdir of memx-const.</release>
+      <release version="1.2.141" date="2020-08-27">Corrected pin pad name from PRO to PR0 for ATxmega128A1U and ATxmega64A1U. Added XC8 support files. Updated copyright notice in c-header files.</release>
+      <release version="1.1.136" date="2020-03-09">Added linux simulator models. Fixed upper bound of external memory for EBI devices. Fixed wrong intial value for FUSEBYTE4.JTAGEN causing warnings when validating configuration bits. Corrected fuse names and captions. Updated tools support and web links. Group adjacent reserved bytes in arrays in the header files.</release>
+      <release version="1.1.68" date="2017-02-16">Generate enums for status/configuration registers according to AVR-1000.</release>
+      <release version="1.0.51" date="2016-05-20">Update ATDF files required for ASF4/Start. Update Timer/Counter info. Rename ASPACE to ASIZE. Clean up EBI module. Add AES trigger. Update CURRCTRL and CURRCALIB registers for U devices.</release>
+      <release version="1.0.39" date="2016-04-25">Fix issues with legacy headers for non-U devices. Add external SRAM to list of address spaces.</release>
+      <release version="1.0.38" date="2016-02-18">Update documentation links.</release>
+      <release version="1.0.36" date="2015-09-09">Initial release.</release>
+    </releases>
+  </pdsc>
+</package>

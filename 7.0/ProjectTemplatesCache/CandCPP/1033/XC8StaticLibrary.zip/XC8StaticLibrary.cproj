@@ -1,0 +1,31 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>$projectversion$</ProjectVersion>
+    <ToolchainName>$fullyqualifiedtoolchainname$</ToolchainName>
+    <ProjectGuid>EA52BB98-9C26-420A-987D-870AECE58AD8</ProjectGuid>
+    <avrdevice>$selecteddevice$</avrdevice>
+    <avrdeviceseries>$deviceseries$</avrdeviceseries>
+    <OutputType>StaticLibrary</OutputType>
+    <Language>$Language$</Language>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+    </ToolchainSettings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$StartupFileNameWithoutExtension$.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project= "$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

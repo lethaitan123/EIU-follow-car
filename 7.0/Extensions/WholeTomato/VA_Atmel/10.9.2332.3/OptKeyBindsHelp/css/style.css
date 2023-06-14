@@ -1,0 +1,39 @@
+body {
+font-family: 'Segoe UI', Verdana;
+font-size: 9pt;
+color: WindowText;
+background-color: ThreeDFace;
+margin-top: 1px;
+overflow:hidden;
+}
+
+p {
+margin: 6px 0 6px 0;
+}
+
+a {
+border: 0;
+text-decoration: none;
+}
+
+img {
+border: 0;
+text-decoration: none;
+margin: 0;
+}
+
+img[src*="external-link.png"] {
+vertical-align: -1px;
+}
+
+.hline {
+width: 100%;
+height: 1px;
+margin: 6px 0 6px 0;
+background: ThreeDShadow;
+}
+
+#paneAll
+{
+height: 114px;
+}

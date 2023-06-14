@@ -1,0 +1,39 @@
+<kvps>
+	<kvp>
+		<keys>
+			<key>Fuses</key>
+			<key>Program</key>
+			<key>Erase</key>
+			<key>Write</key>
+			<key>Read</key>
+			<key>Production</key>
+			<key>Signature</key>
+			<key>Voltage</key>
+		</keys>
+		<value>
+			<Description>Tools -&gt; Device Programming</Description>
+			<Command>Tools.DeviceProgramming</Command>
+		</value>
+	</kvp>
+	<kvp>
+		<keys>
+			<key>STK500</key>
+		</keys>
+		<value>
+			<Description>Tools -&gt; Add Targets...</Description>
+			<Command>Tools.AddTarget</Command>
+		</value>
+	</kvp>
+  <kvp>
+    <keys>
+      <key>atprogram</key>
+      <key>erase</key>
+      <key>write</key>
+      <key>atfw</key>
+    </keys>
+    <value>
+      <Description>Tools -&gt; Command Prompt</Description>
+      <Command>Tools.CommandPrompt</Command>
+    </value>
+  </kvp>
+</kvps>

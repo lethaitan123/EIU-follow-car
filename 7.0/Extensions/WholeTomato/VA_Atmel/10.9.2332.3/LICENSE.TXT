@@ -1,0 +1,71 @@
+Visual Assist
+Software License Agreement
+Effective January 23, 2019
+
+BY INSTALLING OR USING THIS SOFTWARE, YOU ARE BECOMING A PARTY TO, AND ARE CONSENTING TO BE BOUND BY, THIS AGREEMENT. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS AGREEMENT, DO NOT INSTALL OR USE THIS SOFTWARE.
+
+DEFINITIONS
+1. "Software" means Visual Assist in object code form, documentation, and updates included in software maintenance.
+2. "Licensor" means Whole Tomato Software, LLC, having a place of business at 10801-1 N. Mopac Expressway, Austin, TX 78759, USA.
+3. "Licensee" means:
+	a. the individual evaluating the Software during a trial;
+	b. the company, corporation, or organization that purchased a Standard License(s) for the Software;
+	c. the individual who purchased a Personal License for the Software;
+	d. the individual who purchased an Academic License for the Software for non-commercial, educational purposes only; and
+	e. the educator who was granted a Classroom License for the Software for non-commercial, educational purposes only.
+4. "Activation Key" means a two-line value that identifies a Licensee, license count if applicable, term of software maintenance, and hashcode to activate a genuine copy of the Software.
+5. "Authorized User" means:
+	a. the individual evaluating the Software during a trial;
+	b. an employee or independent contractor who might at any time use the Software, of the company, corporation, or organization that purchased a Standard License(s) for the Software; an entity has one Authorized User for each Standard License purchased;
+	c. the individual who purchased a Personal License for the Software; the individual is the only Authorized User;
+	d. the individual who purchased an Academic License for the Software; the individual is the only Authorized User; and
+	e. the educator who was granted a Classroom License for the Software, and students of computer programming courses under his direction; the educator and said students are the only Authorized Users.
+
+GRANT
+Subject to the terms of this Agreement, Licensor hereby grants Licensee a non-transferable, non-exclusive, non-sub-licensable, limited license that allows:
+1. Licensee to distribute an Activation Key(s) to Authorized User(s);
+2. Authorized User(s) to install the licensed version of the Software on computer PCs where potential use of the Software is restricted exclusively to Authorized User(s);
+3. Authorized User(s) to use the Software on computer PCs, in virtual machines, in multiple IDEs, and in multiple instances of an IDE; and
+4. Licensee to make a copy of the Software for archival purposes, provided the copy contains all of the proprietary notices of the Software.
+
+RESTRICTIONS
+Licensee will not, and will have no right to:
+1. distribute, use, or transfer an Activation Key(s) that has been superseded by an Activation Key(s) provided with software maintenance or upon consolidation of Activation Keys;
+2. modify, translate, reverse engineer, decompile, disassemble (except to the extent applicable laws specifically prohibit such restriction), create derivative works based on, or otherwise attempt to discover the source code or underlying ideas or algorithms of the Software;
+3. sell, rent, lease, distribute, or otherwise transfer rights to the Software without prior written consent from Licensor; and
+4. remove any proprietary notices or labels from the Software.
+
+TITLE AND COPYRIGHT
+Title, ownership rights, intellectual property rights, and copyright to the Software, and any copies or portions thereof, shall remain in Licensor. The Software is protected by United States copyright laws and international intellectual property treaty provisions.
+
+VALIDATION, AUTOMATIC UPDATES, AND COLLECTION FOR SOFTWARE
+Licensor reserves the right, but shall have no obligation, at any time to verify that Authorized Users have been authorized by Licensee and to restrict access to the Software if, in Licensor’s reasonable judgment, an Authorized User cannot be so verified. Further, Licensee agrees that Licensor has the right to require an audit (electronic or otherwise) of Licensee or an Authorized User’s installation, use and/or access of the Software including access to machine IDs, serial numbers and related information. As part of any such audit, Licensor or its authorized representative will have the additional right, on fifteen (15) days’ prior notice to Licensee, to inspect Licensee or the Authorized User’s records and systems, including  machine IDs, serial numbers and related information, to verify that the installation, use of, and access to any and all Software is in conformance with this Agreement and its applicable terms. Additionally, within fifteen (15) days of such prior notice for audit, Licensee will provide Licensor all records and information requested by Licensor in order to verify that the installation, use and/or access of the Software is in conformance with this Agreement. Licensee and the Authorized User will provide full cooperation to enable any such audit. If Licensor determines that Licensee or the Authorized User’s installation, use of or access to the Software is not in conformity with this Agreement, Licensee will immediately take such steps as are necessary to bring Licensee and the Authorized Users’ installation, use and/or access into compliance with this Agreement, and pay the reasonable costs of the audit. Licensee shall be invoiced for such underpaid fees (based on the list prices in effect at the time the audit is completed); and if the underpaid fees exceed 5% of the License fees already paid. Licensor reserves the right to seek any other remedies available at law or in equity, whether under this Agreement or otherwise.
+Licensor will collect information about Licensee uses of the Software  for auditing purposes, including, but not limited to, verify license compliance, improve Licensor products and services and check for updates. This information includes, but it is not limited to, the software version, the product ID information, a machine ID, and the internet protocol address of the device. If the Software is not properly licensed, its functionality will be affected.  By using the Software, Licensee and its Authorized Users’ consent to the transmission of the information described in this section. The feature that checks for update may be disabled in the options dialog for the Software. For more information about Licensor collection, use and disclosure of personal data, please review Whole Tomato Privacy Policy at https://www.wholetomato.com/company/privacyPolicy.asp .
+
+DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND. LICENSOR HEREBY DISCLAIMS ALL EXPRESS OR IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS AGREEMENT. SOME U.S. STATES DO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT APPLY TO LICENSEE. LICENSEE MAY HAVE OTHER LEGAL RIGHTS THAT VARY FROM STATE TO STATE OR BY JURISDICTION.
+
+LIMITATION OF LIABILITY
+LICENSEE ASSUMES THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE. LICENSOR ASSUMES NO LIABILITY FOR THE COST OF ANY SERVICE OR REPAIR IF THE SOFTWARE IS DEFECTIVE. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, STRICT LIABILITY, OR OTHERWISE, SHALL LICENSOR, OR ITS LICENSORS, SUPPLIERS OR RESELLERS, BE LIABLE TO LICENSEE OR ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES. IN NO EVENT WILL LICENSOR BE LIABLE FOR ANY DAMAGES IN EXCESS OF THE MONEY PAID FOR THE SOFTWARE, EVEN IF LICENSOR SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME U.S. STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO LICENSEE.
+
+TERMINATION
+The license granted herein shall be perpetual. If Licensee fails to comply with any of the terms of this Agreement, this Agreement and the rights granted herein will terminate immediately. Licensor may, at its sole discretion and at any time, terminate this Agreement. On termination, Licensee must cease using and destroy all copies of the Software.
+
+EXPORT CONTROLS
+Licensee shall comply with all export laws, restrictions and regulations of the United States. Licensee shall not export, re-export or otherwise transfer the Software to any country for which the United States maintains an embargo, or to any person or entity on the U.S. Department of Treasury List of Specially Designated Nationals or the U.S. Department of Commerce Denied Persons List or Entity List. Licensee represents and warrants that licensee is not located in, under the control of, or a national or resident of any restricted country or on any such list.
+
+U.S. GOVERNMENT RESTRICTED RIGHTS
+Use, duplication or disclosure by the Government is subject to restrictions set forth in subparagraphs (a) through (d) of the Commercial Computer-Restricted Rights clause at FAR 52.227-19 when applicable, or in subparagraph (c) (1) (ii) of the Rights in Technical Data and Computer Software clause in DFARS 252.227-7013, and in similar clauses in the NASA FAR Supplement.
+
+THIRD PARTY CREDITS
+Portions of the Software utilize or include third party software and other copyrighted materials. Credits, licensing terms, and disclaimers for such materials are contained in the installation directory for the Software, and are accessible via the About dialog for the Software. Licensee agrees that use of such copyrighted materials is governed by their respective terms.
+
+ENTIRE AGREEMENT
+This Agreement represents the complete agreement concerning this license between the parties and supersedes all prior agreements and representations between them. It may be amended only in writing executed by both parties. If any provision of this Agreement is held to be unenforceable for any reason, such provision shall be reformed only to the extent necessary to make it enforceable. This Agreement shall be governed by and construed under Texas law as such law applies to agreements between Texas residents entered into and to be performed within Texas.
+
+CONTACT
+If you have questions regarding this agreement, contact:
+Whole Tomato Software, LLC 
+10801-1 N. Mopac Expressway
+Austin, TX 78759, USA 
+sales@wholetomato.com

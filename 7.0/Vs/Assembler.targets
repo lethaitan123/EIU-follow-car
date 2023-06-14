@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<UsingTask TaskName="RunAssemblerTask" AssemblyFile="$(AVRSTUDIO_EXE_PATH)\Extensions\Application\AvrAssembler.dll" />
+  <Target Name="CoreBuild">
+    <RunAssemblerTask Directory ="$(MSBuildProjectDirectory)" Project="$(MSBuildProjectName)"  EntryFile="$(EntryFile)" AvrDevice = "$(avrdevice)" Configuration="$(Configuration)" 
+	ToolchainSettings="$(ToolchainSettings)" ToolchainName="$(ToolchainName)" UsesExternalMakeFile="$(UsesExternalMakeFile)" ExternalMakeFilePath="$(ExternalMakeFilePath)" 
+	BuildTarget="$(BuildTarget)" CleanTarget="$(CleanTarget)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" GenerateHexFile="$(GenerateHexFile)" 
+	GenerateListFile="$(GenerateListFile)" GenerateEepFile="$(GenerateEepFile)" ToolchainFlavour="$(ToolchainFlavour)"/>	
+  </Target>
+  <Target Name="Clean">
+    <RunAssemblerTask Clean="true" Directory="$(MSBuildProjectDirectory)" Project="$(MSBuildProjectName)" EntryFile="$(EntryFile)" AvrDevice = "$(avrdevice)" Configuration="$(Configuration)" 
+	ToolchainSettings="$(ToolchainSettings)" ToolchainName="$(ToolchainName)" UsesExternalMakeFile="$(UsesExternalMakeFile)" ExternalMakeFilePath="$(ExternalMakeFilePath)" 
+	BuildTarget="$(BuildTarget)" CleanTarget="$(CleanTarget)" OutputFileName="$(OutputFileName)" OutputFileExtension="$(OutputFileExtension)" GenerateHexFile="$(GenerateHexFile)" 
+	GenerateListFile="$(GenerateListFile)" 	GenerateEepFile="$(GenerateEepFile)" ToolchainFlavour="$(ToolchainFlavour)"/>	
+  </Target>
+  <Target Name="CoreRebuild" DependsOnTargets="Clean;CoreBuild" />
+  <Import Project="Avr.common.targets"/>
+</Project>

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package schemaVersion="1.0">
+  <content>
+    <resources target="ATxmega16E5">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega16E5.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox16e5.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega16e5/device-specs/specs-atxmega16e5"/>
+        <meta key="mmcu-option" value="atxmega16e5"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega16e5/avrxmega2/libatxmega16e5.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega16e5/avrxmega2/crtatxmega16e5.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega16e5"/>
+        <meta key="mmcu-option" value="atxmega16e5"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega16e5.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega16e5.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega16e5.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega16e5.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega16e5.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox16e5.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega16e5.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega16e5.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega16E5def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmegae5.dll"/>
+        <meta key="device" value="ATxmega16E5"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmegae5.so"/>
+        <meta key="device" value="ATxmega16E5"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega32E5">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega32E5.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox32e5.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega32e5/device-specs/specs-atxmega32e5"/>
+        <meta key="mmcu-option" value="atxmega32e5"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega32e5/avrxmega2/libatxmega32e5.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega32e5/avrxmega2/crtatxmega32e5.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega32e5"/>
+        <meta key="mmcu-option" value="atxmega32e5"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega32e5.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega32e5.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega32e5.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega32e5.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega32e5.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox32e5.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega32e5.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega32e5.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega32E5def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmegae5.dll"/>
+        <meta key="device" value="ATxmega32E5"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmegae5.so"/>
+        <meta key="device" value="ATxmega32E5"/>
+      </resource>
+    </resources>
+    <resources target="ATxmega8E5">
+      <resource type="atdf" subdir="atdf">
+        <includes pattern="ATxmega8E5.atdf"/>
+      </resource>
+      <resource type="c.header" subdir="include">
+        <includes pattern="avr/iox8e5.h"/>
+        <includes pattern="component-version.h"/>
+      </resource>
+      <resource type="c.source.exe.template" subdir="templates">
+        <includes pattern="main.c"/>
+      </resource>
+      <resource type="c.source.lib.template" subdir="templates">
+        <includes pattern="library.c"/>
+      </resource>
+      <resource type="cpp.source.exe.template" subdir="templates">
+        <includes pattern="main.cpp"/>
+      </resource>
+      <resource type="cpp.source.lib.template" subdir="templates">
+        <includes pattern="library.cpp"/>
+      </resource>
+      <resource type="gcc.spec" subdir="gcc">
+        <includes pattern="dev/atxmega8e5/device-specs/specs-atxmega8e5"/>
+        <meta key="mmcu-option" value="atxmega8e5"/>
+      </resource>
+      <resource type="gcc.lib" subdir="gcc">
+        <includes pattern="dev/atxmega8e5/avrxmega2/libatxmega8e5.a"/>
+      </resource>
+      <resource type="gcc.startup.obj" subdir="gcc">
+        <includes pattern="dev/atxmega8e5/avrxmega2/crtatxmega8e5.o"/>
+      </resource>
+      <resource type="xc8.spec" subdir="xc8">
+        <includes pattern="avr/device-specs/specs-atxmega8e5"/>
+        <meta key="mmcu-option" value="atxmega8e5"/>
+      </resource>
+      <resource type="xc8.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/libatxmega8e5.a"/>
+      </resource>
+      <resource type="xc8.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/crtatxmega8e5.o"/>
+      </resource>
+      <resource type="xc8.memxconst.startup.obj" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/crtatxmega8e5.o"/>
+      </resource>
+      <resource type="xc8.memxconst.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega8e5.a"/>
+      </resource>
+      <resource type="xc8.memxconst.mapped.lib" subdir="xc8">
+        <includes pattern="avr/lib/avrxmega2/memx-const/libatxmega8e5.a"/>
+      </resource>
+      <resource type="xc8.c.header" subdir="xc8">
+        <includes pattern="avr/include/avr/iox8e5.h"/>
+      </resource>
+      <resource type="xc8.cfgdata" subdir="xc8">
+        <includes pattern="avr/cfgdata/atxmega8e5.cfgdata"/>
+      </resource>
+      <resource type="xc8.chipinfo" subdir="xc8">
+        <includes pattern="avr/chipinfo/atxmega8e5.html"/>
+      </resource>
+      <resource type="avrasm.header" subdir="avrasm/inc">
+        <includes pattern="ATxmega8E5def.inc"/>
+      </resource>
+      <resource type="avrasm.source.template" subdir="avrasm/templates">
+        <includes pattern="main.asm"/>
+      </resource>
+      <resource type="simulator.win32" subdir="simulator/win32">
+        <includes pattern="libatxmegae5.dll"/>
+        <meta key="device" value="ATxmega8E5"/>
+      </resource>
+      <resource type="simulator.linux64" subdir="simulator/linux64">
+        <includes pattern="libatxmegae5.so"/>
+        <meta key="device" value="ATxmega8E5"/>
+      </resource>
+    </resources>
+  </content>
+  <pdsc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" vendor="Atmel" compliant="false">
+    <releases>
+      <release version="1.4.BUILDNUMBER">Fixed eeprom_read_block() routine.</release>
+      <release version="1.3.114" date="2020-08-27">Added XC8 support files. Updated copyright notice in c-header files.</release>
+      <release version="1.2.109" date="2020-03-09">Corrected fuse names and captions. Corrected SPI SCK and MOSI signal definitions. Updated tools support and web links. Group adjacent reserved bytes in arrays in the header files.</release>
+      <release version="1.2.51" date="2017-04-06">Added linux simulator models.</release>
+      <release version="1.2.48" date="2017-01-10">Updated header files.</release>
+      <release version="1.1.44" date="2016-08-23">Header file typedef enums generated according to application notes AVR-1000.</release>
+      <release version="1.0.30" date="2016-02-18">Updated documentation links.</release>
+      <release version="1.0.28" date="2015-09-09">Initial release.</release>
+    </releases>
+  </pdsc>
+</package>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ <SnippetCollection>
+  - <Language Lang="GCCLanguage" Guid="{BC47FA77-B642-4aba-ABBF-8012C3FDD096}">
+    - <SnippetDir>
+      <OnOff>On</OnOff>
+      <Installed>true</Installed>
+      <Locale>1033</Locale>
+      <DirPath>%InstallRoot%\Snippets\GCCLanguage\</DirPath>
+      <LocalizedName>GCCLanguage</LocalizedName>
+    </SnippetDir>
+  </Language>
+</SnippetCollection>

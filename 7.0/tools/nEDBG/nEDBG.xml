@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AVRTOOL version="1.0">
+    <TYPE>com.atmel.avrdbg.tool.nedbg</TYPE>
+    <NAME>nEDBG</NAME>
+    <DEVICESUPPORT>implicit</DEVICESUPPORT>
+    <DEBUGSUPPORT>true</DEBUGSUPPORT>
+    <PROGRAMMINGSUPPORT>true</PROGRAMMINGSUPPORT>
+    <DETECTABLE>true</DETECTABLE>
+    <Connection type="USB" name="com.atmel.avrdbg.connection.cmsis-dap">
+        <VendorId>0x03EB</VendorId>
+        <ProductIds>
+            <ProductId>0x216F</ProductId>
+            <ProductId>0x2173</ProductId>
+            <ProductId>0x2174</ProductId>
+            <ProductId>0x2175</ProductId>
+        </ProductIds>
+    </Connection>
+    <DEBUGGINGINTERFACES>
+        <INTERFACE DisplayName="UPDI" InterfaceName="UPDI">
+            <InterfaceTypes>
+                <InterfaceType>updi</InterfaceType>
+            </InterfaceTypes>
+            <CLOCK Name="UPDI Clock" ClockType="Continous">
+                <Unit>Hz</Unit>
+                <MINFREQUENCY>32000</MINFREQUENCY>
+                <MAXFREQUENCY>1500000</MAXFREQUENCY>
+                <DEFAULTFREQUENCY>750000</DEFAULTFREQUENCY>
+            </CLOCK>
+            <!-- HV_IMPLEMENTATION
+                0  Shared UPDI pin, HV on UPDI pin
+                1  Dedicated UPDI pin, no HV
+                2  Shared UPDI pin, HV on _RESET  -->
+            <HV_IMPLEMENTATION>1</HV_IMPLEMENTATION>
+        </INTERFACE>
+        <INTERFACE DisplayName="SWD" InterfaceName="SWD">
+            <InterfaceTypes>
+                <InterfaceType>swd</InterfaceType>
+            </InterfaceTypes>
+            <CLOCK Name="SWD Clock" ClockType="Continous">
+                <Unit>Hz</Unit>
+                <MINFREQUENCY>32000</MINFREQUENCY>
+                <MAXFREQUENCY>2000000</MAXFREQUENCY>
+                <DEFAULTFREQUENCY>2000000</DEFAULTFREQUENCY>
+                <Description>The clock frequency should not exceed target CPU speed * 10.</Description>
+            </CLOCK>
+            <ResetOnStartSession>always</ResetOnStartSession>
+        </INTERFACE>
+        <INTERFACE DisplayName="PDI" InterfaceName="PDI">
+            <InterfaceTypes>
+                <InterfaceType>pdi</InterfaceType>
+            </InterfaceTypes>
+            <CLOCK Name="PDI Clock" ClockType="Continous">
+                <Unit>Hz</Unit>
+                <MINFREQUENCY>32000</MINFREQUENCY>
+                <MAXFREQUENCY>7500000</MAXFREQUENCY>
+                <DEFAULTFREQUENCY>4000000</DEFAULTFREQUENCY>
+            </CLOCK>
+        </INTERFACE>
+    </DEBUGGINGINTERFACES>
+    <DETECTABLE>true</DETECTABLE>
+    <ALWAYSAVAILABLE>false</ALWAYSAVAILABLE>
+    <PROVIDER>Microchip Technology Inc.</PROVIDER>
+    <DESCRIPTION/>
+    <WEBPAGE/>
+    <WEBSHOP/>
+    <ASOGUI>
+        <Image>nedbg.png</Image>
+    </ASOGUI>
+    <PROGRAMMINGINTERFACES>
+        <INTERFACE DisplayName="UPDI" InterfaceName="UPDI">
+            <InterfaceTypes>
+                <InterfaceType>updi</InterfaceType>
+            </InterfaceTypes>
+            <CLOCK Name="UPDI Clock" ClockType="Continous">
+                <Unit>Hz</Unit>
+                <MINFREQUENCY>32000</MINFREQUENCY>
+                <MAXFREQUENCY>1500000</MAXFREQUENCY>
+                <DEFAULTFREQUENCY>750000</DEFAULTFREQUENCY>
+            </CLOCK>
+            <!-- HV_IMPLEMENTATION
+                0  Shared UPDI pin, HV on UPDI pin
+                1  Dedicated UPDI pin, no HV
+                2  Shared UPDI pin, HV on _RESET  -->
+            <HV_IMPLEMENTATION>1</HV_IMPLEMENTATION>
+        </INTERFACE>
+        <INTERFACE DisplayName="SWD" InterfaceName="SWD">
+            <InterfaceTypes>
+                <InterfaceType>swd</InterfaceType>
+            </InterfaceTypes>
+            <CLOCK Name="SWD Clock" ClockType="Continous">
+                <Unit>Hz</Unit>
+                <MINFREQUENCY>32000</MINFREQUENCY>
+                <MAXFREQUENCY>2000000</MAXFREQUENCY>
+                <DEFAULTFREQUENCY>2000000</DEFAULTFREQUENCY>
+                <Description>The clock frequency should not exceed target CPU speed * 10.</Description>
+            </CLOCK>
+            <ResetOnStartSession>always</ResetOnStartSession>
+        </INTERFACE>
+        <INTERFACE DisplayName="PDI" InterfaceName="PDI">
+            <InterfaceTypes>
+                <InterfaceType>pdi</InterfaceType>
+            </InterfaceTypes>
+            <CLOCK Name="PDI Clock" ClockType="Continous">
+                <Unit>Hz</Unit>
+                <MINFREQUENCY>32000</MINFREQUENCY>
+                <MAXFREQUENCY>7500000</MAXFREQUENCY>
+                <DEFAULTFREQUENCY>4000000</DEFAULTFREQUENCY>
+            </CLOCK>
+        </INTERFACE>
+        <INTERFACE DisplayName="TPI" InterfaceName="TPI">
+            <InterfaceTypes>
+                <InterfaceType>tpi</InterfaceType>
+            </InterfaceTypes>
+        </INTERFACE>
+    </PROGRAMMINGINTERFACES>
+    <ToolInfoProperties>
+        <CompositeProperty Description="Features" FormatString="{0}">
+            <Property Name="CanEraseXmegaPages" DataType="Int64"/>
+        </CompositeProperty>
+        <CompositeProperty Description="Firmware Version" FormatString="{0:x}.{1:x2}">
+            <Property Name="MajorFirmwareVersion" DataType="Int64"/>
+            <Property Name="MinorFirmwareVersion" DataType="Int64"/>
+            <Property Name="MajorFirmwareVersionOnDisk" DataType="Int64"/>
+            <Property Name="MinorFirmwareVersionOnDisk" DataType="Int64"/>
+        </CompositeProperty>
+        <CompositeProperty Description="Hardware Version" FormatString="{0}">
+            <Property Name="HardwareRevision" DataType="Int64"/>
+        </CompositeProperty>
+    </ToolInfoProperties>
+</AVRTOOL>

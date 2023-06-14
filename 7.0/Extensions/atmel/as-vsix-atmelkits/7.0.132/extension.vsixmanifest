@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="6F4B8FE4-C464-4916-8B43-AC92431C1CDF">
+    <Name>Atmel Kits</Name>
+    <Author>Atmel</Author>
+    <Version>7.0.132</Version>
+    <Description xml:space="preserve">Getting started help for kits provided by Atmel, such as the Xplained Pro series.</Description>
+    <Locale>1033</Locale>
+    <License>EULA.txt</License>
+    <Icon>AtmelKits.ico</Icon>
+    <PreviewImage>Preview.png</PreviewImage>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.6" />
+    <AllUsers>true</AllUsers>
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>AtmelKits.pkgdef</VsPackage>
+    <CustomExtension Type="Content">AtmelKits.dll</CustomExtension>
+    <CustomExtension Type="com.atmel.studio.toolinfopythonscript">KitWindow.py</CustomExtension>
+    <CustomExtension Type="Data">KitDatabase.xml</CustomExtension>
+  </Content>
+</Vsix>

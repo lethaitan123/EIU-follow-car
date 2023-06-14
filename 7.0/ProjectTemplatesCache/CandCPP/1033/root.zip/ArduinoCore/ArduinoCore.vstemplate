@@ -1,0 +1,19 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ArduinoCore</Name>
+    <Description>Contains all the core files for the Arduino sketch.</Description>
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ArduinoCore</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Disabled</LocationField>
+    <EnableLocationBrowseButton>false</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ArduinoCore.cppproj" ReplaceParameters="true" TargetFileName="ArduinoCore.cppproj">
+      <ProjectItem OpenInWebBrowser="true" TargetFileName="readme.html">readme.html</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

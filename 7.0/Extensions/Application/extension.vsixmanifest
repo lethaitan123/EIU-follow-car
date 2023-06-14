@@ -1,0 +1,66 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="e874ffe4-fbe3-4624-9a17-61014ede02d0" Version="7.0" Language="en-US" Publisher="Atmel Corporation" />
+    <DisplayName>Shell VSIX manifest</DisplayName>
+    <Description xml:space="preserve">Atmel Studio Runtime, Includes Project System, Debug sub system, Language sub system</Description>
+  </Metadata>
+  <Installation InstalledByMsi="true" SystemComponent="true">
+    <InstallationTarget Id="AtmelStudio" Version="[7.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="BackendService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="TargetView.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ItemTemplates\AvrGCC.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ObjProjects.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ToolService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="TargetService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="DeviceService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AvrGCCLanguage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AVRAssemblyLanguage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="IoView.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="HelpAbout.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="LanguageServiceProviders.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="OpenObjectFileForDebugging.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AvrStudio4ProjectImporter.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Programming.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="FirmwareUpgrade.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="DebugCommands.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AvrStartPage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ImportProjectTemplate.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ProcessorView.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Avr32StudioProjectImporter.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="MakeBuilderService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AvrStudioCommands.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AvrStudioServiceImpl.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="AvrGCCLanguage.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="LanguageServiceProviders.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ItemTemplates\AvrAssembler.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="KitCommunicationService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="TraceView.dll" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="TraceView.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AvrProjectManagement.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="DataBreakpoint.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="DataBreakpointService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="AvrProjectWizardElements.dll" AssemblyName="AvrProjectWizardElements, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Atmel.VsIde.AvrStudio.Debugging.DebugEngine.dll" AssemblyName="Atmel.VsIde.AvrStudio.Debugging.DebugEngine, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="ProjectImporter.Core.dll" AssemblyName="ProjectImporter.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Utilities.dll" AssemblyName="Utilities, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="NotificationService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="AtmelStudioNotifications.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ProjectTemplates\Arduino.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="PackManagerService.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ComponentManagerUI.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="CoreNotificationProvider.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="CodeCoverage.dll" AssemblyName="CodeCoverage, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="CodeNavigation.dll" AssemblyName="CodeNavigation, Version=7.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ASQuickLaunch.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="UsageExperiencePackage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="PackNotificationProvider.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="ProfileSelector.pkgdef" />
+  </Assets>
+</PackageManifest>

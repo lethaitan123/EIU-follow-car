@@ -1,0 +1,68 @@
+body {
+font-family: 'Segoe UI', Tahoma, 'Microsoft Sans Serif', Arial;
+font-size: 9pt;
+color: WindowText;
+background-color: ThreeDFace;
+margin-top: 1px;
+}
+
+p {
+margin: 6px 0 6px 0;
+}
+
+a {
+border: 0;
+text-decoration: none;
+}
+
+img {
+border: 0;
+text-decoration: none;
+margin: 0;
+}
+
+img[src*="external-link.png"] {
+vertical-align: -1px;
+}
+
+.hline {
+width: 100%;
+height: 1px;
+margin: 6px 0 6px 0;
+background: ThreeDShadow;
+}
+
+#paneButtonsAndIcons,
+#paneCPPDirectories,
+#paneCodeGeneration,
+#paneCpp6,
+#paneDebug,
+#paneDisplay,
+#paneHashtags,
+#paneFontsAndColors,
+#paneHighlighting,
+#paneLicense,
+#paneListBoxes,
+#paneMouse,
+#panePerfGeneral,
+#paneProjectsAndFiles,
+#paneSmartSelect,
+#paneStartup,
+#paneSuggestions,
+#paneUnderlining,
+#paneUnrealEngine
+{
+height: 114px;
+}
+
+#paneAbout,
+#paneEditor,
+#paneSourceLinks
+{
+height: 50px;
+}
+
+#paneGoto
+{
+height: 140px;
+}

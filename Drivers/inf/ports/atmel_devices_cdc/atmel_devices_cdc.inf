@@ -1,0 +1,227 @@
+; Windows 2000, XP, Vista, 7 and 8 (x32 and x64) setup file for Atmel CDC Devices
+; Copyright (c) 2000-2017 Atmel Norway AS
+; Copyright (c) 2017-2019 Microchip Technology Inc.
+
+[Version] 
+Signature                          = "$Windows NT$" 
+Class                              = Ports 
+ClassGuid                          = {4D36E978-E325-11CE-BFC1-08002BE10318} 
+
+Provider                           = %Manufacturer% 
+CatalogFile                        = atmel_devices_cdc.cat
+DriverVer                          = 01/10/2019,42.0.1.0 
+
+;----------------------------------------------------------
+; Targets
+;----------------------------------------------------------
+[Manufacturer] 
+%Manufacturer%                     = DeviceList, NTAMD64, NTIA64, NT 
+
+[DeviceList] 
+%ATMEL_CDC_XPLAINED%               = DriverInstall, USB\VID_03EB&PID_2122 
+%ATMEL_CDC_USB_ZIGBIT_Sub%         = DriverInstall, USB\VID_03EB&PID_214B
+%ATMEL_CDC_USB_ZIGBIT_2_4%         = DriverInstall, USB\VID_03EB&PID_214A
+%ATMEL_CDC_SFW_EXAMPLE%            = DriverInstall, USB\VID_03EB&PID_2307 
+%ATMEL_CDC_EVK1XXX%                = DriverInstall, USB\VID_03EB&PID_2310 
+%ATMEL_CDC_ASF_EXAMPLE%            = DriverInstall, USB\VID_03EB&PID_2404
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE2% = DriverInstall, USB\VID_03EB&PID_2421&MI_00
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE4% = DriverInstall, USB\VID_03EB&PID_2424&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM1%      = DriverInstall, USB\VID_03EB&PID_2425&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM2%      = DriverInstall, USB\VID_03EB&PID_2425&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM1%      = DriverInstall, USB\VID_03EB&PID_2426&MI_00
+%ATMEL_CDC_ASF_EXAMPLE3_COM2%      = DriverInstall, USB\VID_03EB&PID_2426&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM3%      = DriverInstall, USB\VID_03EB&PID_2426&MI_04
+%ATMEL_CDC_ASF_EXAMPLE3_COM4%      = DriverInstall, USB\VID_03EB&PID_2426&MI_06
+%ATMEL_CDC_ASF_EXAMPLE3_COM5%      = DriverInstall, USB\VID_03EB&PID_2426&MI_08
+%ATMEL_CDC_ASF_EXAMPLE3_COM6%      = DriverInstall, USB\VID_03EB&PID_2426&MI_0A
+%ATMEL_CDC_ASF_EXAMPLE3_COM7%      = DriverInstall, USB\VID_03EB&PID_2426&MI_0C
+%ATMEL_AVR_MEGA_CDC%               = DriverInstall, USB\VID_03EB&PID_2018
+%ATMEL_AVR_MEGA_CDC_COM1%          = DriverInstall, USB\VID_03EB&PID_201E&MI_00
+%ATMEL_AVR_MEGA_CDC_COM2%          = DriverInstall, USB\VID_03EB&PID_201E&MI_02
+
+%ATMEL_RZUSBStick%                 = DriverInstall, USB\VID_03EB&PID_2115
+
+[DeviceList.NTAMD64]
+%ATMEL_CDC_XPLAINED%               = DriverInstall.NTamd64, USB\VID_03EB&PID_2122 
+%ATMEL_CDC_USB_ZIGBIT_Sub%         = DriverInstall.NTamd64, USB\VID_03EB&PID_214B 
+%ATMEL_CDC_USB_ZIGBIT_2_4%         = DriverInstall.NTamd64, USB\VID_03EB&PID_214A 
+%ATMEL_CDC_SFW_EXAMPLE%            = DriverInstall.NTamd64, USB\VID_03EB&PID_2307 
+%ATMEL_CDC_EVK1XXX%                = DriverInstall.NTamd64, USB\VID_03EB&PID_2310 
+%ATMEL_CDC_ASF_EXAMPLE%            = DriverInstall.NTamd64, USB\VID_03EB&PID_2404 
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE2% = DriverInstall.NTamd64, USB\VID_03EB&PID_2421&MI_00
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE4% = DriverInstall.NTamd64, USB\VID_03EB&PID_2424&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM1%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2425&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM2%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2425&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM1%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_00
+%ATMEL_CDC_ASF_EXAMPLE3_COM2%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM3%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_04
+%ATMEL_CDC_ASF_EXAMPLE3_COM4%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_06
+%ATMEL_CDC_ASF_EXAMPLE3_COM5%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_08
+%ATMEL_CDC_ASF_EXAMPLE3_COM6%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_0A
+%ATMEL_CDC_ASF_EXAMPLE3_COM7%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_0C
+%ATMEL_AVR_MEGA_CDC%               = DriverInstall.NTamd64, USB\VID_03EB&PID_2018
+%ATMEL_AVR_MEGA_CDC_COM1%          = DriverInstall.NTamd64, USB\VID_03EB&PID_201E&MI_00
+%ATMEL_AVR_MEGA_CDC_COM2%          = DriverInstall.NTamd64, USB\VID_03EB&PID_201E&MI_02
+
+%ATMEL_RZUSBStick%                 = DriverInstall.NTamd64, USB\VID_03EB&PID_2115
+
+[DeviceList.NTIA64]
+%ATMEL_CDC_XPLAINED%               = DriverInstall.NTamd64, USB\VID_03EB&PID_2122 
+%ATMEL_CDC_USB_ZIGBIT_Sub%         = DriverInstall.NTamd64, USB\VID_03EB&PID_214B
+%ATMEL_CDC_USB_ZIGBIT_2_4%         = DriverInstall.NTamd64, USB\VID_03EB&PID_214A
+%ATMEL_CDC_SFW_EXAMPLE%            = DriverInstall.NTamd64, USB\VID_03EB&PID_2307 
+%ATMEL_CDC_EVK1XXX%                = DriverInstall.NTamd64, USB\VID_03EB&PID_2310 
+%ATMEL_CDC_ASF_EXAMPLE%            = DriverInstall.NTamd64, USB\VID_03EB&PID_2404 
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE2% = DriverInstall.NTamd64, USB\VID_03EB&PID_2421&MI_00
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE4% = DriverInstall.NTamd64, USB\VID_03EB&PID_2424&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM1%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2425&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM2%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2425&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM1%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_00
+%ATMEL_CDC_ASF_EXAMPLE3_COM2%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM3%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_04
+%ATMEL_CDC_ASF_EXAMPLE3_COM4%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_06
+%ATMEL_CDC_ASF_EXAMPLE3_COM5%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_08
+%ATMEL_CDC_ASF_EXAMPLE3_COM6%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_0A
+%ATMEL_CDC_ASF_EXAMPLE3_COM7%      = DriverInstall.NTamd64, USB\VID_03EB&PID_2426&MI_0C
+%ATMEL_AVR_MEGA_CDC%               = DriverInstall.NTamd64, USB\VID_03EB&PID_2018
+%ATMEL_AVR_MEGA_CDC_COM1%          = DriverInstall.NTamd64, USB\VID_03EB&PID_201E&MI_00
+%ATMEL_AVR_MEGA_CDC_COM2%          = DriverInstall.NTamd64, USB\VID_03EB&PID_201E&MI_02
+
+%ATMEL_RZUSBStick%                 = DriverInstall.NTamd64, USB\VID_03EB&PID_2115
+
+[DeviceList.NT]
+%ATMEL_CDC_XPLAINED%               = DriverInstall.NT, USB\VID_03EB&PID_2122 
+%ATMEL_CDC_USB_ZIGBIT_Sub%         = DriverInstall.NT, USB\VID_03EB&PID_214B
+%ATMEL_CDC_USB_ZIGBIT_2_4%         = DriverInstall.NT, USB\VID_03EB&PID_214A
+%ATMEL_CDC_SFW_EXAMPLE%            = DriverInstall.NT, USB\VID_03EB&PID_2307 
+%ATMEL_CDC_EVK1XXX%                = DriverInstall.NT, USB\VID_03EB&PID_2310 
+%ATMEL_CDC_ASF_EXAMPLE%            = DriverInstall.NT, USB\VID_03EB&PID_2404 
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE2% = DriverInstall.NT, USB\VID_03EB&PID_2421&MI_00
+%ATMEL_CDC_ASF_COMPOSITE_EXAMPLE4% = DriverInstall.NT, USB\VID_03EB&PID_2424&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM1%      = DriverInstall.NT, USB\VID_03EB&PID_2425&MI_00
+%ATMEL_CDC_ASF_EXAMPLE2_COM2%      = DriverInstall.NT, USB\VID_03EB&PID_2425&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM1%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_00
+%ATMEL_CDC_ASF_EXAMPLE3_COM2%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_02
+%ATMEL_CDC_ASF_EXAMPLE3_COM3%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_04
+%ATMEL_CDC_ASF_EXAMPLE3_COM4%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_06
+%ATMEL_CDC_ASF_EXAMPLE3_COM5%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_08
+%ATMEL_CDC_ASF_EXAMPLE3_COM6%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_0A
+%ATMEL_CDC_ASF_EXAMPLE3_COM7%      = DriverInstall.NT, USB\VID_03EB&PID_2426&MI_0C
+%ATMEL_AVR_MEGA_CDC%               = DriverInstall.NT, USB\VID_03EB&PID_2018
+%ATMEL_AVR_MEGA_CDC_COM1%          = DriverInstall.NT, USB\VID_03EB&PID_201E&MI_00
+%ATMEL_AVR_MEGA_CDC_COM2%          = DriverInstall.NT, USB\VID_03EB&PID_201E&MI_02
+
+%ATMEL_RZUSBStick%                 = DriverInstall.NT, USB\VID_03EB&PID_2115
+
+
+;----------------------------------------------------------
+; Windows 2000, XP, Vista, Windows 7, Windows 8 - 32bit
+;----------------------------------------------------------
+[DestinationDirs] 
+DefaultDestDir                     = 12 
+FakeModemCopyFileSection           = 12 
+
+[DriverInstall.NT] 
+include                            = mdmcpq.inf
+CopyFiles                          = FakeModemCopyFileSection
+AddReg                             = DriverInstall.NT.AddReg 
+
+[DriverInstall.NT.AddReg]
+HKR,,DevLoader,,*ntkern 
+HKR,,NTMPDriver,,usbser.sys 
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider" 
+; HKR,,Properties, 1, 80,01,00,00, ff,00,00,00, ff,00,00,00, 07,00,00,00, 0f,00,00,00, f7,03,00,00, 40,4b,4c,00, 40,4b,4c,00
+
+[DriverInstall.NT.Services] 
+AddService                         = usbser, 0x00000002, DriverService.NT 
+
+[DriverService.NT] 
+DisplayName                        = %Serial.SvcDesc% 
+ServiceType                        = 1 ; SERVICE_KERNEL_DRIVER 
+StartType                          = 3 ; SERVICE_DEMAND_START 
+ErrorControl                       = 1 ; SERVICE_ERROR_NORMAL 
+ServiceBinary                      = %12%\usbser.sys 
+LoadOrderGroup                     = Base 
+
+;----------------------------------------------------------
+; Windows XP, Vista, Windows 7, Windows 8 - 64bit
+;----------------------------------------------------------
+[DriverInstall.NTamd64]
+include                            = mdmcpq.inf
+CopyFiles                          = FakeModemCopyFileSection
+AddReg                             = DriverInstall.NTamd64.AddReg
+
+[DriverInstall.NTamd64.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[DriverInstall.NTamd64.Services]
+AddService                         = usbser, 0x00000002, DriverService.NTamd64
+
+[DriverService.NTamd64]
+DisplayName                        = %Serial.SvcDesc%
+ServiceType                        = 1 ; SERVICE_KERNEL_DRIVER 
+StartType                          = 3 ; SERVICE_DEMAND_START 
+ErrorControl                       = 1 ; SERVICE_ERROR_NORMAL 
+ServiceBinary                      = %12%\usbser.sys
+
+;----------------------------------------------------------
+; String
+;----------------------------------------------------------
+[Strings] 
+Manufacturer                       = "Microchip Technology, Inc."
+
+ATMEL_CDC_XPLAINED                 = "XPLAINED Virtual Com Port"
+ATMEL_CDC_USB_ZIGBIT_Sub           = "ZigBit SubGHz USBstick Com Port"
+ATMEL_CDC_USB_ZIGBIT_2_4           = "ZigBit 2.4GHz USBstick Com Port"
+ATMEL_CDC_SFW_EXAMPLE              = "Communication Device Class SFW example"
+ATMEL_CDC_EVK1XXX                  = "EVK1XXX Virtual Com Port"
+ATMEL_CDC_ASF_EXAMPLE              = "Communication Device Class ASF example"
+ATMEL_CDC_ASF_COMPOSITE_EXAMPLE2   = "Communication Device Class ASF composite example 2"
+ATMEL_CDC_ASF_COMPOSITE_EXAMPLE4   = "Communication Device Class ASF composite example 4"
+ATMEL_CDC_ASF_EXAMPLE2_COM1        = "Communication Device Class ASF example2, COM1"
+ATMEL_CDC_ASF_EXAMPLE2_COM2        = "Communication Device Class ASF example2, COM2"
+ATMEL_CDC_ASF_EXAMPLE3_COM1        = "Communication Device Class ASF example3, COM1"
+ATMEL_CDC_ASF_EXAMPLE3_COM2        = "Communication Device Class ASF example3, COM2"
+ATMEL_CDC_ASF_EXAMPLE3_COM3        = "Communication Device Class ASF example3, COM3"
+ATMEL_CDC_ASF_EXAMPLE3_COM4        = "Communication Device Class ASF example3, COM4"
+ATMEL_CDC_ASF_EXAMPLE3_COM5        = "Communication Device Class ASF example3, COM5"
+ATMEL_CDC_ASF_EXAMPLE3_COM6        = "Communication Device Class ASF example3, COM6"
+ATMEL_CDC_ASF_EXAMPLE3_COM7        = "Communication Device Class ASF example3, COM7"
+ATMEL_AVR_MEGA_CDC                 = "AVR MEGA Virtual Com Port"
+ATMEL_AVR_MEGA_CDC_COM1            = "AVR MEGA Virtual Com Port, COM1"
+ATMEL_AVR_MEGA_CDC_COM2            = "AVR MEGA Virtual Com Port, COM2"
+
+ATMEL_RZUSBStick                   = "Atmel RZ USB Stick"
+
+Serial.SvcDesc                     = "USB Serial emulation driver" 
+
+
+; Not localize
+FLG_ADDREG_BINVALUETYPE	    = 0x00000001 ; The given value is "raw" data. (This value is identical to the FLG_ADDREG_TYPE_BINARY.)
+FLG_ADDREG_NOCLOBBER	    = 0x00000002 ; Prevent a given value from replacing the value of an existing value entry.
+FLG_ADDREG_DELVAL	        = 0x00000004 ; Delete the given subkey from the registry, or delete the specified value-entry-name from the specified registry subkey.
+FLG_ADDREG_APPEND	        = 0x00000008 ; Append a given value to that of an existing named value entry. This flag is valid only if FLG_ADDREG_TYPE_MULTI_SZ is also set. The specified string value is not appended if it already exists.
+FLG_ADDREG_KEYONLY	        = 0x00000010 ; Create the given subkey, but ignore any supplied value-entry-name and/or value.
+FLG_ADDREG_OVERWRITEONLY	= 0x00000020 ; Reset to the supplied value only if the specified value-entry-name already exists in the given subkey.
+FLG_ADDREG_64BITKEY	        = 0x00001000 ; (Windows XP and later versions of Windows.) Make the specified change in the 64-bit registry. If not specified, the change is made to the native registry.
+FLG_ADDREG_KEYONLY_COMMON	= 0x00002000 ; (Windows XP and later versions of Windows.) This is the same as FLG_ADDREG_KEYONLY but also works in a del-registry-section of an INF DelReg directive.
+FLG_ADDREG_32BITKEY	        = 0x00004000 ; (Windows XP and later versions of Windows.) Make the specified change in the 32-bit registry. If not specified, the change is made to the native registry.
+FLG_ADDREG_TYPE_SZ	        = 0x00000000 ; The given value entry and/or value is of type REG_SZ.
+FLG_ADDREG_TYPE_MULTI_SZ	= 0x00010000 ; The given value entry and/or value is of the registry type REG_MULTI_SZ. The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
+FLG_ADDREG_TYPE_EXPAND_SZ	= 0x00020000 ; The given value-entry-name and/or value is of the registry type REG_EXPAND_SZ.
+FLG_ADDREG_TYPE_DWORD	    = 0x00010001 ; FLG_ADDREG_TYPE_DWORD; The given value-entry-name and/or value is of the registry type REG_DWORD.
+FLG_ADDREG_TYPE_NONE	    = 0x00020001 ; The given value-entry-name and/or value is of the registry type REG_NONE.
+
+SPSVCINST_TAGTOFRONT 	    = 0x00000001 ; Move the named service's tag to the front of its group order list, thereby ensuring that it is loaded first within that group (unless a subsequently installed device with this INF specification displaces it). INF files that install exclusively PnP devices and devices with WDM drivers should not set this flag.
+SPSVCINST_ASSOCSERVICE 	    = 0x00000002 ; Assign the named service as the PnP function driver (or legacy driver) for the device being installed by this INF file.
+SPSVCINST_NOCLOBBER_DISPLAYNAME 	= 0x00000008 ; Do not overwrite the given service's (optional) friendly name if this service already exists in the system.
+SPSVCINST_NOCLOBBER_STARTTYPE       = 0x00000010 ; Do not overwrite the given service's start type if this named service already exists in the system.
+SPSVCINST_NOCLOBBER_ERRORCONTROL 	= 0x00000020 ; Do not overwrite the given service's error-control value if this named service already exists in the system.
+SPSVCINST_NOCLOBBER_LOADORDERGROUP 	= 0x00000040 ; Do not overwrite the given service's load-order-group value if this named service already exists in the system. INF files that install exclusively PnP devices and devices with WDM drivers should not set this flag.
+SPSVCINST_NOCLOBBER_DEPENDENCIES 	= 0x00000080 ; Do not overwrite the given service's dependencies list if this named service already exists in the system. INF files that install exclusively PnP devices and devices with WDM drivers should not set this flag.
+SPSVCINST_NOCLOBBER_DESCRIPTION 	= 0x00000100 ; Do not overwrite the given service's (optional) description if this service already exists in the system.
+SPSVCINST_CLOBBER_SECURITY 	        = 0x00000400 ; (Windows XP and later versions of Windows) Overwrite the security settings for the service if this service already exists in the system.
+SPSVCSINST_STARTSERVICE 	        = 0x00000800 ; (Windows Vista and later versions of Windows) Start the service after the service is installed. This flag cannot be used to start a service that implements a Plug and Play (PnP) function driver or filter driver for a device. Otherwise, this flag can be used to start a user-mode or kernel-mode service that is managed by the Service Control Manager (SCM).
+SPSVCINST_NOCLOBBER_REQUIREDPRIVILEGES 	= 0x00001000 ; (Windows 7 and later versions of Windows) Do not overwrite the privileges for the given service if this service already exists in the system.

@@ -1,0 +1,51 @@
+///////////////////////////////////////////////////////////////////////////////
+// default includes
+
+
+#include <stddef.h>
+#include <cstddef>
+#include <exception>
+#include <new>
+#include <stdarg.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <limits.h>
+#include <setjmp.h>
+#include <malloc.h>
+#include <ios.h>
+#include <sys\types.h>
+#include <cstdlib>
+#include <cstdio>
+#include <cwchar>
+#include <iosfwd>
+#include <cstring>
+#include <utility>
+#include <wctype.h>
+#include <cerrno>
+#include <errno.h>
+#include <climits>
+#include <stdexcept>
+#include <typeinfo>
+#include <locale.h>
+#include <streambuf>
+#include <ios>
+#include <ostream>
+#include <istream>
+#include <iostream>
+#include <fstream>
+#include <sys\stat.h>
+#include <process.h>
+#include <cctype>
+#include <memory>
+#include <iterator>
+#include <cwctype>
+#include <iostream>
+#include <fcntl.h>
+#include <string>
+#include <map>
+#include <vector>
+#include <list>
+#include <deque>

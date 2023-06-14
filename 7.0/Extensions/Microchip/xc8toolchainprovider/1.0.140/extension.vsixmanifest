@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Vsix xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="1.0.0">
+  <Identifier Id="37ef5c0a-bc30-4ea7-bff0-9183f7fe45c2">
+    <Name>XC8ToolchainProvider</Name>
+    <Author>Microchip</Author>
+    <Version>1.0.140</Version>
+    <Description xml:space="preserve">XC8 Toolchain Provider for Microchip Studio</Description>
+    <Locale>1033</Locale>    
+    <InstalledByMsi>false</InstalledByMsi>
+    <Icon>Resources/Icon.ico</Icon>
+    <PreviewImage>Resources/XC8Preview.png</PreviewImage>
+    <SupportedProducts>
+      <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MaxVersion="4.5" MinVersion="4.5"/>
+    <AllUsers>false</AllUsers>
+  </Identifier>
+  <References/>
+  <Content>
+    <MefComponent>XC8ToolchainProvider.dll</MefComponent>
+    <Assembly AssemblyName="XC8ProjectWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9">XC8ProjectWizard.dll</Assembly>
+    <MefComponent>XC8ProjectWizard.dll</MefComponent>
+    <VsPackage>XC8ProjectWizard.pkgdef</VsPackage>
+
+    <Assembly AssemblyName="XC8ToolchainNotificationProvider, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9">XC8ToolchainNotificationProvider.dll</Assembly>
+    <VsPackage>XC8ToolchainNotificationProvider.pkgdef</VsPackage>
+    
+    <Assembly AssemblyName="ConvertAVRtoXC8Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9">ConvertAVRtoXC8Wizard.dll</Assembly>
+    <VsPackage>ConvertAVRtoXC8Wizard.pkgdef</VsPackage>
+    
+    
+  </Content>
+</Vsix>

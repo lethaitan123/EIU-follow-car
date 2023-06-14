@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="AtmelStudio7ExtensionManager">
+    <Name>Microchip Gallery</Name>
+    <Author>Microchip</Author>
+    <Version>8.1.0</Version>
+    <Description xml:space="preserve">Microchip Gallery</Description>
+    <Locale>1033</Locale>
+    <AllUsers>true</AllUsers>
+    <InstalledByMsi>false</InstalledByMsi>
+    <Icon>Resources/Icon.png</Icon>
+    <PreviewImage>Resources/Preview.png</PreviewImage>
+    <SupportedProducts>
+      <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.6" MaxVersion="4.9" />
+  </Identifier>
+  <Content>
+    <VsPackage>Microchip.Gallery.pkgdef</VsPackage>
+  </Content>
+</Vsix><!--
+    Please add the following element to PackageManifest\\Assets:
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+-->
+<!--
+    Please add the following element to PackageManifest\\Dependencies:
+    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+-->

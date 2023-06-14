@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ToolchainExtension Help</title>
+</head>
+<body class="vendor-book">
+    <div class="details">
+         <span class="vendor">Atmel Corporation</span>
+        <span class="product">ToolchainExtension</span>
+        <span class="name">ToolchainExtension Help</span>
+        <span class="locale">EN-US</span>
+    </div>
+    <div class="package-list">
+        <div class="package">
+            <!-- NOTE: The "name" span value cannot contain any periods! -->
+            <span class="name">HelpContentSetup</span>
+            <a class="current-link" href="HelpContentSetup.cab">HelpContentSetup.cab</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+<TemplateData>  
+        <Name>SAM L11 Secure Solution v1.2</Name>  
+        <Description>Creates an Atmel Studio TrustZone-based Solution which contains a Secure project as well as a Non-Secure project that call back into each other.</Description>  
+        <ProjectType>CAndCPP</ProjectType>  
+    </TemplateData>  
+<TemplateContent>  
+    <ProjectCollection>  
+        <ProjectTemplateLink>  
+            SecureApp\SecureApp.vstemplate  
+        </ProjectTemplateLink>  
+        <ProjectTemplateLink>  
+            NonSecureApp\NonSecureApp.vstemplate  
+        </ProjectTemplateLink>  
+    </ProjectCollection>  
+</TemplateContent>  
+</VSTemplate>

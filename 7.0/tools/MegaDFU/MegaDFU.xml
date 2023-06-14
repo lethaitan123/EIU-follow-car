@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AVRTOOL version="1.0">
+    <TYPE>com.atmel.avrdbg.tool.megadfu</TYPE>
+    <NAME>Atmel Mega DFU</NAME>
+    <DEVICESUPPORT>explicit</DEVICESUPPORT>
+    <DEBUGSUPPORT>false</DEBUGSUPPORT>
+    <DETECTABLE>true</DETECTABLE>
+    <Connection type="USB" name="com.atmel.avrdbg.connection.libusb0">
+        <VendorId>0x03EB</VendorId>
+        <ProductIds>
+            <ProductId>0x2FFB</ProductId>  <!-- at90usb1287,at90usb1286,at90usb1287-4k,at90usb1286-4k -->
+            <ProductId>0x2FF9</ProductId>  <!-- at90usb647 -->
+            <ProductId>0x2FFA</ProductId>  <!-- at90usb646 -->
+            <ProductId>0x2FF7</ProductId>  <!-- at90usb82 -->
+            <ProductId>0x2FF2</ProductId>  <!-- atmega32u6 -->
+            <ProductId>0x2FF4</ProductId>  <!-- atmega32u4 -->
+            <ProductId>0x2FF0</ProductId>  <!-- atmega32u2 -->
+            <ProductId>0x2FF3</ProductId>  <!-- atmega16u4 -->
+            <ProductId>0x2FEF</ProductId>  <!-- atmega16u2 -->
+            <ProductId>0x2FEE</ProductId>  <!-- atmega8u2 -->
+        </ProductIds>
+    </Connection>
+    <ALWAYSAVAILABLE>false</ALWAYSAVAILABLE>
+    <PROVIDER>Atmel Corporation</PROVIDER>
+    <DESCRIPTION>Atmel Mega DFU is a programming interface through a bootloader on the device.</DESCRIPTION>
+    <WEBPAGE>http://www.microchip.com</WEBPAGE>
+    <ASOGUI>
+        <Image>MegaDFU.png</Image>
+    </ASOGUI>
+    <PROGRAMMINGSUPPORT>true</PROGRAMMINGSUPPORT>
+    <ToolInfoProperties>
+        <CompositeProperty Description="Bootloader version" FormatString="{0}">
+            <Property Name="MajorFirmwareVersion" DataType="String"/>
+        </CompositeProperty>
+    </ToolInfoProperties>
+</AVRTOOL>

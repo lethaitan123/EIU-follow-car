@@ -1,0 +1,25 @@
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  
+  <TemplateData>
+    <Name>C File</Name>
+    <Description>A blank C file.</Description>
+    <Icon>Text.ico</Icon>
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>180</SortOrder>
+    <DefaultName>CFile.c</DefaultName>
+  </TemplateData>
+  
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">CProgram.c</ProjectItem>
+  </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>
+      AvrGCC
+    </Assembly>
+    <FullClassName>
+      Atmel.VsIde.AvrStudio.Project.Gcc.Wizard.AvrGccItemTemplateWizard
+    </FullClassName>
+  </WizardExtension>
+  
+</VSTemplate>

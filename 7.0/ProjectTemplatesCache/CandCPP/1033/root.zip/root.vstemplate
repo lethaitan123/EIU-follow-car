@@ -1,0 +1,37 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>Create project from Arduino sketch</Name>
+    <Description>Creates an Atmel Studio project from Arduino sketch file. Creates two projects (Sketch, ArduinoCore). The Sketch project contains the sketch file and the ArduinoCore project contains all the core, variant and any library files.</Description>
+    <ProjectType>CandCPP</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ArduinoSketch</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$sketch_name$" CopyParameters ="true">
+        Sketch\Sketch.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="ArduinoCore" CopyParameters="true">
+       ArduinoCore\ArduinoCore.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+    <CustomParameters>
+      <CustomParameter Name="$sketch_name$" Value="ArduinoSketch"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>
+      Arduino
+    </Assembly>
+    <FullClassName>
+      Atmel.Studio.Project.Arduino.SketchImportWizard
+    </FullClassName>
+  </WizardExtension>
+</VSTemplate>

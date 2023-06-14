@@ -1,0 +1,38 @@
+﻿<VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>GCC C++ Static Library Project</Name>
+    <Description>Creates an AVR 8-bit or AVR/ARM 32-bit  C++ Static Library project</Description>
+    <Icon>Avrgcc_cpp_lib.ico</Icon>
+    <PreviewImage>Avrgcc_cpp_libPreview.png</PreviewImage>
+    <!--This name CandCPP will be defined in the Project Package. Any changes done here should be done there also. 
+        Also the build scripts uses these names to resolve folder names. so fix the as6-ide build scripts. -->
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>50</SortOrder>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GccLibrary</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Avrgcc_cpp_lib.cppproj" ReplaceParameters="true">
+      <!-- Workaround - Added Properties folder to keep the Visual Studio project creation flow happier -->
+      <Folder Name="Properties" TargetFolderName="Properties" />
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$selecteddevice$" Value="ATxmega128A1"/>
+      <CustomParameter Name="$selectedtool$" Value="com.atmel.avrdbg.tool.simulator" />
+      <CustomParameter Name="$deviceseries$" Value="none" />
+      <CustomParameter Name="$IOHeaderFolderName$" Value=""/>
+      <CustomParameter Name="$Language$" Value="CPP"/>
+      <CustomParameter Name="$fullyqualifiedtoolchainname$" Value="com.Atmel.AVRGCC"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>
+      AvrGCC
+    </Assembly>
+    <FullClassName>
+      Atmel.VsIde.AvrStudio.Project.Gcc.Wizard.GccProjectWizard
+    </FullClassName>
+  </WizardExtension>
+</VSTemplate>

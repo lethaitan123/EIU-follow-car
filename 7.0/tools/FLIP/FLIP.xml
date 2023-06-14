@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AVRTOOL version="1.0">
+    <TYPE>com.atmel.avrdbg.tool.flip</TYPE>
+    <NAME>Atmel FLIP</NAME>
+    <DEVICESUPPORT>explicit</DEVICESUPPORT>
+    <DEBUGSUPPORT>false</DEBUGSUPPORT>
+    <DETECTABLE>true</DETECTABLE>
+    <Connection type="USB" name="com.atmel.avrdbg.connection.libusb0">
+        <VendorId>0x03EB</VendorId>
+        <ProductIds>
+            <ProductId>0x2FF8</ProductId>  <!-- at32uc3a0xxx,at32uc3a1xxx  -->
+            <ProductId>0x2FF1</ProductId>  <!-- at32uc3a3xxx,at32uc3a4xxx  -->
+            <ProductId>0x2FF6</ProductId>  <!-- at32uc3b -->
+            <ProductId>0x2FEB</ProductId>  <!-- at32uc3c -->
+            <ProductId>0x2FE8</ProductId>  <!-- atxmega64a1u -->
+            <ProductId>0x2FED</ProductId>  <!-- atxmega128a1u -->
+            <ProductId>0x2FE5</ProductId>  <!-- atxmega64a3u -->
+            <ProductId>0x2FE6</ProductId>  <!-- atxmega128a3u -->
+            <ProductId>0x2FE7</ProductId>  <!-- atxmega192a3u -->
+            <ProductId>0x2FEC</ProductId>  <!-- atxmega256a3u -->
+            <ProductId>0x2FE3</ProductId>  <!-- atxmega16a4u -->
+            <ProductId>0x2FE4</ProductId>  <!-- atxmega32a4u -->
+            <ProductId>0x2FDD</ProductId>  <!-- atxmega64a4u -->
+            <ProductId>0x2FDE</ProductId>  <!-- atxmega128a4u -->
+            <ProductId>0x2FE2</ProductId>  <!-- atxmega256a3bu -->
+            <ProductId>0x2FE1</ProductId>  <!-- atxmega64b1 -->
+            <ProductId>0x2FEA</ProductId>  <!-- atxmega128b1 -->
+            <ProductId>0x2FDF</ProductId>  <!-- atxmega64b3 -->
+            <ProductId>0x2FE0</ProductId>  <!-- atxmega128b3 -->
+            <ProductId>0x2FD6</ProductId>  <!-- atxmega64c3 -->
+            <ProductId>0x2FD7</ProductId>  <!-- atxmega128c3 -->
+            <ProductId>0x2FDA</ProductId>  <!-- atxmega256c3 -->
+            <ProductId>0x2FDB</ProductId>  <!-- atxmega384c3 -->
+            <ProductId>0x2FD8</ProductId>  <!-- atxmega16c4 -->
+            <ProductId>0x2FD9</ProductId>  <!-- atxmega32c4 -->
+        </ProductIds>
+    </Connection>
+    <ALWAYSAVAILABLE>false</ALWAYSAVAILABLE>
+    <PROVIDER>Atmel Corporation</PROVIDER>
+    <DESCRIPTION>Atmel FLIP is a programming interface through a bootloader on the device.</DESCRIPTION>
+    <WEBPAGE>http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=FLIP</WEBPAGE>
+    <ASOGUI>
+        <Image>FLIP.png</Image>
+    </ASOGUI>
+    <PROGRAMMINGSUPPORT>true</PROGRAMMINGSUPPORT>
+    <ToolInfoProperties>
+        <CompositeProperty Description="Bootloader version" FormatString="{0}">
+            <Property Name="MajorFirmwareVersion" DataType="String"/>
+        </CompositeProperty>
+    </ToolInfoProperties>
+</AVRTOOL>

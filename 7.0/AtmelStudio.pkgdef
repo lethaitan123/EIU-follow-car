@@ -1,0 +1,111 @@
+﻿[$Initialization$]
+"ApplicationExtensionsFolder"  = "$RootFolder$\Extensions"
+"PkgDefSearchPath"             = "$ShellFolder$\Common7\IDE\ShellExtensions; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\DataDesign; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Platform; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\DesignTools; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Editor; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\ErrorList; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\TemplateProviders; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Diff; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\ProjectWizards; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Language\CallHierarchy; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\ObjectBrowser; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Web; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Windows Forms Designer Services; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\Windows Forms Designer UI; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\ReportingServices; \
+                                  $ShellFolder$\Common7\IDE\CommonExtensions\Microsoft\VSTelemetry; \
+                                  $ApplicationExtensionsFolder$"
+"RegistryRoot"                 = "Software\Atmel\AtmelStudio\7.0"
+"ImageManifestSearchPath"      = "$ShellFolder$\Common7\IDE"
+
+[$RootKey$]
+"InstallDir" = "$RootFolder$"
+
+[$RootKey$\BindingPaths\{00000000-0000-0000-0000-000000000000}]
+//This is needed for the debug versuin of studio to run. This is how the studio picks up the SDK Assemblies at runtime.
+//"%CommonProgramFiles%\directory2"=""
+
+[$RootKey$\AD7Metrics\Engine\{B5F6AD76-C394-40cf-A5A3-9815CEAA7C59}]
+"CLSID"="{B5F6AD76-C394-40cf-A5A3-9815CEAA7C59}"
+"Name"="AVR Debugger"
+"PortSupplier"="{A159353A-3D5B-4b09-9076-DAAEA3301BB3}"
+"ProgramProvider"="{94C92FFF-A30F-4d3d-8337-B8BD907A6D37}"
+ "Disassembly" = dword:1
+ "Registers" = dword:1
+ "SetNextStatement" = dword:1
+ "FunctionBP" = dword:1
+ "ConditionalBP" = dword:1
+ "HitCountBP" = dword:1
+ "CallStackBP" = dword:1
+
+[$RootKey$\AD7Metrics\PortSupplier\{A159353A-3D5B-4b09-9076-DAAEA3301BB3}]
+"CLSID"="{A159353A-3D5B-4b09-9076-DAAEA3301BB3}"
+"Name"="AVR Debugger Port Supplier"
+
+
+[$RootKey$\CLSID\{94C92FFF-A30F-4d3d-8337-B8BD907A6D37}]
+"Assembly"="Atmel.VsIde.AvrStudio.Debugging.DebugEngine"
+"Class"="Atmel.VsIde.AvrStudio.Debugging.DebugEngine.DebugProgramProvider"
+"InprocServer32"="c:\\windows\\system32\\mscoree.dll"
+"CodeBase"="$RootFolder$\\extensions\\Application\\Atmel.VsIde.AvrStudio.Debugging.DebugEngine.dll"
+
+[$RootKey$\CLSID\{A159353A-3D5B-4b09-9076-DAAEA3301BB3}]
+"Assembly"="Atmel.VsIde.AvrStudio.Debugging.DebugEngine"
+"Class"="Atmel.VsIde.AvrStudio.Debugging.DebugEngine.DebugPortSupplier"
+"InprocServer32"="c:\\windows\\system32\\mscoree.dll"
+"CodeBase"="$RootFolder$\\extensions\\Application\\Atmel.VsIde.AvrStudio.Debugging.DebugEngine.dll"
+
+
+[$RootKey$\MainWindowFrameControls\{a6e60a06-8c16-4115-8bb1-b2d8ff65646b}]
+@="Notification Badge"
+"Alignment"="TitleBarRight"
+"DisplayName"="#1007"
+"FullScreenAlignment"="MenuBarRight"
+"Package"="{1ef3d5c7-e5b4-47ca-9b1e-e8592ea66c46}"
+"ViewFactory"="{a3f3f74e-d35a-43fd-bd41-5034ce02537f}"
+"ViewId"=dword:00000064
+"Sort"=dword:00000032
+"FullScreenSort"=dword:00000032
+
+[$RootKey$\MainWindowFrameControls\{D574271E-E1C9-4D0B-B48B-A62BE0CD660E}]
+@="Applied Profile"
+"Alignment"="TitleBarRight"
+"DisplayName"="#1007"
+"FullScreenAlignment"="MenuBarRight"
+"Package"="{f436e6db-9b8e-4602-a75c-50468ba27def}"
+"ViewFactory"="{1D692599-933E-4C78-909E-B5C9C083064F}"
+"ViewId"=dword:00000064
+"Sort"=dword:00000030
+"FullScreenSort"=dword:00000030
+
+[$RootKey$\CLSID\{B5F6AD76-C394-40cf-A5A3-9815CEAA7C59}]
+"Assembly"="Atmel.VsIde.AvrStudio.Debugging.DebugEngine"
+"Class"="Atmel.VsIde.AvrStudio.Debugging.DebugEngine.DebugEngine"
+"InprocServer32"="c:\\windows\\system32\\mscoree.dll"
+"CodeBase"="$RootFolder$\\extensions\\Application\\Atmel.VsIde.AvrStudio.Debugging.DebugEngine.dll"
+
+[$RootKey$\Help]
+"Product"="Atmel Studio"
+"Version"="70"
+"Catalog"="AtmelStudio70"
+"OnlineBaseUrl"="https://onlinedocs.microchip.com/query/as70.query?appId=AS70&l="
+"BrandingPackage"="AtmelStudioBrandingPackage.mshc"
+
+[$RootKey$\HelpProviders\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]
+"Name"="13407"
+"Package"="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}"
+@="Help3 Provider"
+
+[$RootKey$\HelpProviders]
+@="{C99BDC23-FF29-46bf-9658-ADD634CCAED8}"
+
+[$RootKey$\Services\{C99BDC23-FF29-46bf-9658-ADD634CCAED8}]
+"Name"="Help3 Provider"
+@="{4A791146-19E4-11D3-B86B-00C04F79F802}"
+
+[$RootKey$\AutomationOptions\LookInFolders]
+"$RootFolder$\Addins"=""
+@=""
+[$RootKey$\ToolsOptionsPages\Environment\ExtensionManager]

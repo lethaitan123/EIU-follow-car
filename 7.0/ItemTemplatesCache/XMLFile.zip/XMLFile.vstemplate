@@ -1,0 +1,14 @@
+﻿<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>XML File</Name>
+    <Description>A blank XML file.</Description>
+    <Icon>XMLFile.ico</Icon>
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>180</SortOrder>
+    <DefaultName>XMLFile.xml</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">XMLFile.xml</ProjectItem>
+  </TemplateContent>
+
+</VSTemplate>

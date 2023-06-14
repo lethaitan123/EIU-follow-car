@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Convert AVR GCC to XC8 Project</Name>
+    <Description>Convert AVR GCC to XC8 Project</Description>
+    <Icon>ConvertAVRtoXC8icon.ico</Icon>
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>50</SortOrder>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>XC8Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  	<PreviewImage>XC8Preview.png</PreviewImage>
+    <EnableEditOfLocationField>false</EnableEditOfLocationField>
+    <LocationField>Hidden</LocationField>
+    <EnableLocationBrowseButton>false</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+  </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>
+      ConvertAVRtoXC8Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9
+    </Assembly>
+    <FullClassName>
+      ConvertAVRtoXC8Wizard.Wizard.AVRtoXC8Wizard
+    </FullClassName>
+  </WizardExtension>
+</VSTemplate>
+
+

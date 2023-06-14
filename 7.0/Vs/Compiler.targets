@@ -1,0 +1,36 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="RunCompilerTask" AssemblyFile="$(AVRSTUDIO_EXE_PATH)\Extensions\Application\AvrGCC.dll" />
+  <UsingTask TaskName="RunOutputFileVerifyTask" AssemblyFile="$(AVRSTUDIO_EXE_PATH)\Extensions\Application\AvrGCC.dll" />
+  <Target Name="CoreBuild">
+    <RunCompilerTask ContentList ="@(Compile)" FolderList ="@(Folder)" MiscList="@(None)" Directory = "$(MSBuildProjectDirectory)" ProjectFile = "$(MSBuildProjectFullPath)" 
+	Project = "$(MSBuildProjectName)" ToolchainSettings = "$(ToolchainSettings)" ToolchainName = "$(ToolchainName)" AvrDevice = "$(avrdevice)" Configuration="$(Configuration)"
+	UsesExternalMakeFile="$(UsesExternalMakeFile)" ExternalMakeFilePath="$(ExternalMakeFilePath)" BuildTarget="$(BuildTarget)" CleanTarget="$(CleanTarget)" MemorySettings="$(MemorySettings)"
+	OutputType="$(OutputType)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" GenerateHexFile="$(GenerateHexFile)" GenerateListFile="$(GenerateListFile)" 
+	GenerateEepFile="$(GenerateEepFile)" ForceReCompile="$(ForceReCompile)" Language="$(Language)" ToolchainFlavour="$(ToolchainFlavour)" ProjectReferences="@(ProjectReference)"/> 
+	
+	<RunOutputFileVerifyTask  Project = "$(MSBuildProjectName)" OutputType="$(OutputType)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" AvrDevice = "$(avrdevice)" Configuration="$(Configuration)" Language="$(Language)" ToolchainName = "$(ToolchainName)" ToolchainFlavour="$(ToolchainFlavour)" Directory = "$(MSBuildProjectDirectory)" ToolchainSettings = "$(ToolchainSettings)"/>
+  </Target>    
+  
+  <Target Name="Clean">
+    <RunCompilerTask Clean="True" ContentList ="@(Compile)" FolderList ="@(Folder)" MiscList="@(None)" Directory = "$(MSBuildProjectDirectory)" ProjectFile = "$(MSBuildProjectFullPath)"  
+	Project = "$(MSBuildProjectName)" ToolchainSettings = "$(ToolchainSettings)" ToolchainName = "$(ToolchainName)" AvrDevice = "$(avrdevice)"  Configuration="$(Configuration)"
+	UsesExternalMakeFile="$(UsesExternalMakeFile)" ExternalMakeFilePath="$(ExternalMakeFilePath)" BuildTarget="$(BuildTarget)" CleanTarget="$(CleanTarget)"  MemorySettings="$(MemorySettings)"  SelectedFiles="$(SelectedFiles)" OutputType="$(OutputType)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" GenerateHexFile="$(GenerateHexFile)" GenerateListFile="$(GenerateListFile)" GenerateEepFile="$(GenerateEepFile)" Language="$(Language)" ToolchainFlavour="$(ToolchainFlavour)" ProjectReferences="@(ProjectReference)"/>	
+  </Target>
+  
+ <Target Name="CoreRebuild">
+    <RunCompilerTask Rebuild="true" ContentList ="@(Compile)" FolderList ="@(Folder)" MiscList="@(None)" Directory = "$(MSBuildProjectDirectory)" ProjectFile = "$(MSBuildProjectFullPath)"
+	ToolchainSettings = "$(ToolchainSettings)" ToolchainName = "$(ToolchainName)" AvrDevice = "$(avrdevice)" Project = "$(MSBuildProjectName)"  Configuration="$(Configuration)" 
+	UsesExternalMakeFile="$(UsesExternalMakeFile)" ExternalMakeFilePath="$(ExternalMakeFilePath)"  BuildTarget="$(BuildTarget)" CleanTarget="$(CleanTarget)" MemorySettings="$(MemorySettings)" 
+	OutputType="$(OutputType)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" GenerateHexFile="$(GenerateHexFile)" GenerateListFile="$(GenerateListFile)" 
+	GenerateEepFile="$(GenerateEepFile)" Language="$(Language)" ToolchainFlavour="$(ToolchainFlavour)" ProjectReferences="@(ProjectReference)"/>
+
+	<RunOutputFileVerifyTask Project = "$(MSBuildProjectName)" OutputType="$(OutputType)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" AvrDevice = "$(avrdevice)" Configuration="$(Configuration)" Language="$(Language)" ToolchainName = "$(ToolchainName)" ToolchainFlavour="$(ToolchainFlavour)" Directory = "$(MSBuildProjectDirectory)" />
+	</Target>
+	
+ <Target Name="Compile">
+    <RunCompilerTask Compile="true" ContentList ="@(Compile)" FolderList ="@(Folder)" Directory = "$(MSBuildProjectDirectory)" ProjectFile = "$(MSBuildProjectFullPath)" 
+	ToolchainSettings = "$(ToolchainSettings)" ToolchainName = "$(ToolchainName)" AvrDevice = "$(avrdevice)" Project = "$(MSBuildProjectName)"  Configuration="$(Configuration)" 
+	UsesExternalMakeFile="$(UsesExternalMakeFile)" ExternalMakeFilePath="$(ExternalMakeFilePath)"  BuildTarget="$(BuildTarget)" CleanTarget="$(CleanTarget)" MemorySettings="$(MemorySettings)"  SelectedFiles="$(SelectedFiles)" OutputType="$(OutputType)" OutputFileName="$(OutputFileName)"  OutputFileExtension="$(OutputFileExtension)" GenerateHexFile="$(GenerateHexFile)" GenerateListFile="$(GenerateListFile)" GenerateEepFile="$(GenerateEepFile)"  ForceReCompile="$(ForceReCompile)" Language="$(Language)" ToolchainFlavour="$(ToolchainFlavour)" ProjectReferences="@(ProjectReference)"/>
+  </Target>
+  <Import Project="Avr.common.targets"/>  
+</Project>

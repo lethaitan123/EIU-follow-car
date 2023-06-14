@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>switch</Title>
+      <Author>Atmel Corporation</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>switch</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>key</ID>
+          <ToolTip>Expression to switch on</ToolTip>
+          <Default>key</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>value</ID>
+          <ToolTip>Constant expression that matches case</ToolTip>
+          <Default>value</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="GCCLanguage"><![CDATA[switch ($key$)
+{
+    case $value$:
+        /* Your code here */
+        break;
+    default:
+        /* Your code here */
+        break;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

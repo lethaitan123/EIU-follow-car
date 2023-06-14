@@ -1,0 +1,40 @@
+﻿<VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>AVR XC8 C Library Project</Name>
+    <Description>Creates an AVR 8-bit XC8 C library project</Description>
+    <Icon>project.ico</Icon>
+    <PreviewImage>XC8Preview.png</PreviewImage>
+    <ProjectType>CandCPP</ProjectType>
+    <SortOrder>50</SortOrder>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>XC8Library</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="XC8StaticLibrary.cproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties" />
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true" TargetFileName="$StartupFileNameWithoutExtension$.c">library.c</ProjectItem>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$selecteddevice$" Value="ATxmega128A1"/>
+      <CustomParameter Name="$selectedtool$" Value="com.atmel.avrdbg.tool.simulator" />
+      <CustomParameter Name="$deviceseries$" Value="none" />
+      <CustomParameter Name="$IOHeaderFolderName$" Value=""/>
+      <CustomParameter Name="$Language$" Value="C"/>
+      <CustomParameter Name="$fullyqualifiedtoolchainname$" Value="com.microchip.xc8"/>
+      <CustomParameter Name ="$StartupFileNameWithoutExtension$" Value ="library"/>
+    </CustomParameters>
+  </TemplateContent>
+
+
+  <WizardExtension>
+    <Assembly>
+      XC8ProjectWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d264112969646cc9
+    </Assembly>
+    <FullClassName>
+      XC8ProjectWizard.ProjectWizard
+    </FullClassName>
+  </WizardExtension>
+
+</VSTemplate>

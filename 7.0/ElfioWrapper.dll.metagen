@@ -1,0 +1,57 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ElfioWrapper, Version=1.0.8173.8986, Culture=neutral, PublicKeyToken=d264112969646cc9: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ElfioWrapper.SegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 m_segmentaddr : Public
+    UInt32 m_segmentflags : Public
+    System.String m_sectionname : Public
+    UInt32 m_sectionflags : Public
+    UInt32 m_addrAlign : Public
+    System.String m_dataFilePath : Public
+    UInt32 m_size IsLong : Public
+  Methods:
+    WriteSection(elfio* IsImplicitlyDereferenced): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ReadHexFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CopySegmentBuffer(Byte[], UInt32 IsLong): PrivateScope, Public, HideBySig
+Class ElfioWrapper.TextSegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ElfioWrapper.SegmentInfo
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ElfioWrapper.EepromSegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ElfioWrapper.SegmentInfo
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ElfioWrapper.UserSignatureSegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ElfioWrapper.SegmentInfo
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ElfioWrapper.DeviceSignatureSegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ElfioWrapper.SegmentInfo
+    Void .ctor(Byte[], UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ReadHexFile(String): PrivateScope, Public, Virtual, HideBySig
+Class ElfioWrapper.FuseSegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ElfioWrapper.SegmentInfo
+    Void .ctor(Byte[], UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ReadHexFile(String): PrivateScope, Public, Virtual, HideBySig
+Class ElfioWrapper.LockBitsSegmentInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ElfioWrapper.SegmentInfo
+    Void .ctor(Byte[], UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ReadHexFile(String): PrivateScope, Public, Virtual, HideBySig
+Class ElfioWrapper.Elfio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ElfioWrapper.TextSegmentInfo, ElfioWrapper.EepromSegmentInfo, ElfioWrapper.FuseSegmentInfo, ElfioWrapper.LockBitsSegmentInfo, ElfioWrapper.DeviceSignatureSegmentInfo, ElfioWrapper.UserSignatureSegmentInfo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    CreateElf(String): PrivateScope, Public, HideBySig
+    dump_header(String): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

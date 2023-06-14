@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>NonSecureApp</Name>
+    <Description>Application running in the Nonsecure TrustZone</Description>
+    <ProjectType>CandCPP</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>NonSecureApp</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="NonSecureApp.cproj" File="NonSecureApp.cproj" ReplaceParameters="true">
+      <Folder Name="libm" TargetFolderName="libm" />
+      <Folder Name="secureapp-cmse-implib.lib" TargetFolderName="secureapp-cmse-implib.lib" />
+      <Folder Name="Device_Startup" TargetFolderName="Device_Startup">
+        <ProjectItem ReplaceParameters="false" TargetFileName="saml11e16a_flash.ld">saml11e16a_flash.ld</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="startup_saml11e16a.c">startup_saml11e16a.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="system_saml11e16a.c">system_saml11e16a.c</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="main.c">main.c</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
